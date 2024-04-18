@@ -15,4 +15,13 @@ Nous avons ensuite récupéré les scripts python et c++ nécessaires pour le pr
 
 Nous avons ensuite installé OpenCV https://opencv.org/releases/ qui permet aux scripts de pouvoir analyser les images des caméras.
 
+Nous avons ensuite installé cmake https://cmake.org/download/ qui permet creer des fichiers de configurations pour make.
+
 Cette première journée est principalement centrée sur la prise en main du matériel et la compréhension du projet.
+
+Spinnaker fonctionne mais le reste est à faire sur linux et nous n'avons pas réussit à faire tourner les scripts sur windows.
+
+## 18/04/2024
+
+Aujourd'hui nous allons réessayer de faire fonction les scripts sur linux.
+
