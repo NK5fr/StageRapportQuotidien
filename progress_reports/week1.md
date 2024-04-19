@@ -32,7 +32,7 @@ Nous avons commencé par faire la calibration en suivant les instructions et en 
 On a modifié le fichier CMakeLists.txt pour ajouter les bonnes lib (vérifier que que les fichiers ajoutés sont bien dans le bon répertoire).
 
 On doit aussi modifier les configurations des caméras dans le fichier source .ccp en adaptant les setValue par rapport à ce qu'on a dans 
-spinnaker. Dans ce même fichier on enlève les références à TriggerSoftware car inutile dans notre cas (Notre Trigger source est en Line0 et non software). On a aussi retiré le release du système car on n'arrive pas à kill les buffer ensuite si on le laisse
+spinnaker. Dans ce même fichier on enlève les références à TriggerSoftware car inutile dans notre cas (Notre Trigger source est en Line0 et non software). On a aussi mis le release du système à la fin du script car on n'arrive pas à kill les buffer ensuite si on le laisse avant.
 
 Après avoir fait les modifications pour pouvoir enregistrer les images on a réglé l'exposition et le gain des caméras pour avoir une image correcte.
 
@@ -41,3 +41,27 @@ On a ensuite lancé le script pour prendre 20 paires de photos différenres d'un
 On doit ensuite lancer un script python pour générer les fichiers de calibration. On redimmensionnne le tableau dans le fichier par rapport à la taille de notre chestboard.
 
 Le chestboard ne correspond pas à celui nécessaire donc pas possible de calibrer pour l'instant.
+
+## 19/04/2024
+
+Nous avons imprimé un nouveau chestboard qui sera reconnaissable par le script python.
+
+Nous avons ensuite recalibré les caméras puis avons pris 20 nouvelles photos.
+
+Nous avons ensuite lancé le script python pour générer les fichiers de calibration à partir des photos. Les fichiers sont les suivants :
+
+- intrinsics.yml : paramètres intrinsèques des caméras, c'est à dire les paramètres qui dépendent de la caméra elle-même (focale, distorsion)
+
+- extrinsics.yml : paramètres extrinsèques des caméras, c'est à dire les paramètres qui dépendent de la position relative des caméras (position 3D des caméras, rotation)
+
+
+Une fois les fichiers créés, il nous faut lancer le script c++ permettant d'afficher en "live" le rendu normal de la caméra de gauche et afficher le rendu de la caméra de droite en tant que carte de disparité. Pour cela il nous faurt premièrement modifier le script pour l'adapter à notre hardware en changeant les numéros de séries des caméras. Changer les valeurs de paramètres des caméras par rapport à celles dans spinnaker. Enlever les références à TriggerSoftware car inutile dans notre cas (Notre Trigger source est en Line0 et non software).
+
+Il nous faut ensuite modifier le fichier CMakeLists.txt pour ajouter les bonnes lib (vérifier que que les fichiers ajoutés sont bien dans le bon répertoire). Nous avons installé cuda 11 avec cuDNN (nous avions installé des autres versions mais incompatible avec notre version de openCV). Nous avons du ensuite lancer le script d'installation de openCV en supprimant les références à néon car il n'est pas compatible avec notre cpu.
+Etant donné que nous avons dû prendre des anciennes versions de cuda, cuDNN et OpenCV nous avons du changer la version de gcc et g++ pour une ancienne.
+
+On a ensuite suivi les instructions pour créer l'éxécutable de live_disparity (en corrigeant les erreurs de compilation). Puis on copie les fichiers de calibration dans le répertoire de l'éxécutable.
+
+Nous avons des problèmes de compatibilité avec le hardware donc on recommence avec les versions des plus récentes. 
+
+L'installation de cuda n'as pas fonctionné.
