@@ -19,3 +19,43 @@ Nous avons réussi à lancer ubuntu sur notre pc habituel en passant par le reco
 Nous avons ensuite suivi les instructions pour créer l'éxécutable de live_disparity (en corrigeant les erreurs de compilation). Puis on copie les fichiers de calibration dans le répertoire de l'éxécutable. Nous avons réglé les problèmes de compilations (position des fichiers paramètres). Nous avons finalement lancé l'éxécutable mais nous avons eu un problème de "kernel image".
 
 Le problème provient du gpu qui est trop puissant pour notre version de cuda. Après avoir utilisé la commande nvidia-smi on s'est rendu compte que c'est cuda 12.2 qu'il nous faut. Nous nous lançons donc dans l'installation de cuda 12.2 et de cudnn9 pour cuda 12. Nous changeons aussi la version de opencv. Ca marche toujours pas on recommencera demain.
+
+## 25/04/2024
+
+Après certaine recherches nous avons trouvé que la version cudnn9 est peut être trop élevée donc on install la version cudnn8.9.7 avec opencv 9.0. OpenCV compile voici une mise à jour des versions utilisées :
+
+- cuda 12.2
+- cuDNN 8.9.7 (pour cuda 12)
+- openCV 4.9.0
+- gcc 11.5
+- g++ 11.5
+
+Nous avosn ensuite construit l'éxecutable de live_disparity mais il n'a ntoujours pas marché et il renvoie la même erreur, cependant le version de cuda est bonne donc on cherche l'origine de l'erreur.
+
+L'erreur proviens du fait que le script que l'article nous donne spécifie a l'aide de "-D CUDA_ARCH_BIN=6.2" que la "Compute Capacity" (CC), soit la vitesse a laquelle le GPU peut calculer des operations de matrices, est de 6.2.
+L'ordinateur sur lequel nous sommes entrain de faire ayant une RTX 4090, le CC vaut 8.9 et donc nous devons changer le paramètre de make en : "-D CUDA_ARCH_BIN=8.9"
+
+Nous avons recompilé openCV avec cette nouvelle option puis compilé live_disparity et cela a fonctionné. Nous avons donc pu voir le rendu de la caméra de gauche et la carte de disparité de la caméra de droite. Cependant la carte de disparité n'est pas correcte, il y a des erreurs de calculs. Nous allons donc devoir revoir les paramètres de calibration des caméras. On pense que l'éloignement des caméras est trop grand mais nous n'avons pas le matériel pour les rapprocher en les laissant stable.
+
+En attendant nous allons essayer de faire marcher le perception de la profondeur et ds personnes. Pour cela nous suivont la dernière partie du lien https://www.flir.eu/discover/iis/machine-vision/how-to-build-a-custom-embedded-stereo-system-for-depth-perception/. La perception des personnes se fait gràace à jetson-inference, on s'est rendu compte que l'installation de jetson-inference ne marche pas non plus donc on va essayer de le faire marcher.
+
+Premièrement il y a une confusion dans le placement des dossiers, nous les plaçons donc dans le home. On a aussi remarqué qu'il faut installer TensorRT.
+
+On a pas le pc habituel pour cette après midi on essaie donc de de compiler jetson-inference sur le pc de substitution de manière à ce qu'on puisse le tester sur le pc habituel demain.
+
+TensorRT, Cuda, Cudnn sont tous des outils installables sur le site de nvidia.
+Les compabilités entre TensorRT, Cuda & cudNN sont trouvable sur [ce site](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html). C'est ici que nous trouvons que les versions 10.0.x de TresorRT sont compatibles avec 12.2 de CUDA & avec cuDNN 8.9.7 pour les distributions Linux x86_64, c'est donc cette version que nous choisisons.
+
+D'ailleur pour savoir les bonnes versions à utiliser voici des instructions :
+- Pour les drivers ubuntu : `ubuntu-drivers devices` cela affiche les drivers recommandés pour la carte graphique.
+- Pour la version de CUDA : `nvidia-smi` cela affiche la version de CUDA qu'il convient (il faut installer les drivers nvidia avant).
+- Pour la version de cuDNN : `nvcc --version` vous affichera la version de CUDA à laquelle il faudra adapter cudnn. Pour openCV je vous conseil de prendre cudnn 8.9.7.
+- Pour OpenCv : prenez la dernière version stable 4.9.0.
+- Pour l'option de cmake -D CUDA_ARCH_BIN= : regardez sur internet la version de votre carte graphique et adaptez le CC en conséquence.
+- gcc et g++ : prenez la dernière version stable 11.5. Et changez la si vous avez des erreurs de compilations.
+
+Certaine erreurs de compilations sont provoquées par des erreurs dans les fichiers de opencv. Il est possible de nécessaire parfois de les modifier pour que cela fonctionne. Regardez sur internet si quelque chose de la sorte se présente.
+
+Nous n'arrivons pas à installer la bonne version de tensorrt. On a aussi installé vpi car il est mentionné dans le CMakeList.txt.
+
+L'installation de tensorRT ne marche pas sur le pc de substitution. On va essayer de le faire marcher sur le pc habituel demain.
