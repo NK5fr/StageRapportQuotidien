@@ -59,3 +59,13 @@ Certaine erreurs de compilations sont provoquées par des erreurs dans les fichi
 Nous n'arrivons pas à installer la bonne version de tensorrt. On a aussi installé vpi car il est mentionné dans le CMakeList.txt.
 
 L'installation de tensorRT ne marche pas sur le pc de substitution. On va essayer de le faire marcher sur le pc habituel demain.
+
+## 26/04/2024
+
+L'installation de tensorrt fonctionne sur le pc habituel mais il nous est impossible de trouver certain fichiers de tensorrt en on ne sais pas comment les récupérer pour pouvoir compiler jetson-inference. Le deep learning semble donc être pas possible à effectuer pour le moment. Il nous faut donc pour l'instant nous concentrer sur la calibration des caméras. Cela semble être une tache difficile car malgrès les nombreux essais nous n'arrivons pas à obtenir une carte de disparité correcte. Il faudrait prendre un maximum de photos dans plusieurs angles pour pouvoir calibrer les caméras correctement. Nous allons aussi ajuster les autres paramètres pour rendre l'image des caméras le plus net possible.
+
+Nous effecutons aussi nos premiers essaies sur Qt qui est un framework qui nous permet pour l'instant de créer des interfaces graphiques. Nous avons pour l'instant réussi à créer une fenêtre avec un bouton. 
+
+Après avoir passé plusieurs heures à avoir des fichiers de calibration corrects nous n'avons toujours pas réussi à avoir une carte de disparité correcte.
+
+Après que Tomas Holt soit venu nous parler dans la matinée, il nous a dit que nous allions utilisé QT. Nous avons donc commencer a prendre en main le framework ainsi que d'IDE proposé pour créer des projets avec ce framework.
