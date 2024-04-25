@@ -69,3 +69,13 @@ Nous effecutons aussi nos premiers essaies sur Qt qui est un framework qui nous 
 Après avoir passé plusieurs heures à avoir des fichiers de calibration corrects nous n'avons toujours pas réussi à avoir une carte de disparité correcte.
 
 Après que Tomas Holt soit venu nous parler dans la matinée, il nous a dit que nous allions utilisé QT. Nous avons donc commencer a prendre en main le framework ainsi que d'IDE proposé pour créer des projets avec ce framework.
+
+## 27/04/2024
+
+Nous avons continué à travailler sur la calibration des caméras ce matin. Nous avons essayé plusieurs angles, à des distances différentes avec des chestboard différents avec un décors vide ou non, avec nous sur les photos ou non, avec des caméras différentes, avec un nombre de photos différent mais rien n'y fait la calibration est toujours aussi mauvaise. De plus nous avons perdu l'accès au pc donc nous ne pouvons plus travailler sur le projet pour le moment.
+
+Nous pensons que la qualité des caméras est peut être en partie responsable de la mauvaise calibration mais il semble difficile de pouvoir modifier ça car nous avons déjà utilisé toutes les caméras que nous avions à disposition.
+
+Nous allons également essayer de faire une interface graphique avec Qt pour pouvoir afficher les images des caméras et pouvoir éventuellement changer les paramètres de ces dernières. Pour intégrer les caméras nous allons utiliser une API caméras (spinnaker). Il nous faut donc télécharger l'API spinnaker et l'installer. On nous donnera par la suite une autre application qui fera sensiblement la même chose qu'on devra améliorer sur la dernière version de Qt depuis une version 5.x de Qt. Cette application à améliorer consiste à afficher plusieurs caméras en même temps et de pouvoir les contrôler. Cette app utilise OpenGL.
+
+Nous avons ensuite passé une bonne partie de la journée à s'entrainer sur Qt et nous avons aussi essayer de changer le cablage des caméras pour voir si cela pouvait améliorer la calibration. Nous avons aussi essayé de changer les paramètres de calibration mais rien n'y fait.
