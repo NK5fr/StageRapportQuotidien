@@ -1,6 +1,6 @@
 # Week 2
 
-## 24/04/2024
+## 22/04/2024
 
 Nous avons commencé la journée un peu plus tard car nous n'avions pas accès au pc habituel mais on a pu obtenir un pc de substitution en attendant en debut d'après midi. Sur ce pc nous avons essayé de faire un installation propre de cuda grâce notament aux informations de ce site https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202#open-python-and-execute-a-test. Une fois que cuda et cuDNN étaient installés nous avons installé la version 9.0 de openCV cependant la compilation à échoué et nous tentons d'installer une version un peu plus ancienne de openCV qui pourrait être compatible avec notre version de cuda et cuDNN. 
 
@@ -20,7 +20,7 @@ Nous avons ensuite suivi les instructions pour créer l'éxécutable de live_dis
 
 Le problème provient du gpu qui est trop puissant pour notre version de cuda. Après avoir utilisé la commande nvidia-smi on s'est rendu compte que c'est cuda 12.2 qu'il nous faut. Nous nous lançons donc dans l'installation de cuda 12.2 et de cudnn9 pour cuda 12. Nous changeons aussi la version de opencv. Ca marche toujours pas on recommencera demain.
 
-## 25/04/2024
+## 23/04/2024
 
 Après certaine recherches nous avons trouvé que la version cudnn9 est peut être trop élevée donc on install la version cudnn8.9.7 avec opencv 9.0. OpenCV compile voici une mise à jour des versions utilisées :
 
@@ -60,7 +60,7 @@ Nous n'arrivons pas à installer la bonne version de tensorrt. On a aussi instal
 
 L'installation de tensorRT ne marche pas sur le pc de substitution. On va essayer de le faire marcher sur le pc habituel demain.
 
-## 26/04/2024
+## 24/04/2024
 
 L'installation de tensorrt fonctionne sur le pc habituel mais il nous est impossible de trouver certain fichiers de tensorrt en on ne sais pas comment les récupérer pour pouvoir compiler jetson-inference. Le deep learning semble donc être pas possible à effectuer pour le moment. Il nous faut donc pour l'instant nous concentrer sur la calibration des caméras. Cela semble être une tache difficile car malgrès les nombreux essais nous n'arrivons pas à obtenir une carte de disparité correcte. Il faudrait prendre un maximum de photos dans plusieurs angles pour pouvoir calibrer les caméras correctement. Nous allons aussi ajuster les autres paramètres pour rendre l'image des caméras le plus net possible.
 
@@ -70,7 +70,7 @@ Après avoir passé plusieurs heures à avoir des fichiers de calibration correc
 
 Après que Tomas Holt soit venu nous parler dans la matinée, il nous a dit que nous allions utilisé QT. Nous avons donc commencer a prendre en main le framework ainsi que d'IDE proposé pour créer des projets avec ce framework.
 
-## 27/04/2024
+## 25/04/2024
 
 Nous avons continué à travailler sur la calibration des caméras ce matin. Nous avons essayé plusieurs angles, à des distances différentes avec des chestboard différents avec un décors vide ou non, avec nous sur les photos ou non, avec des caméras différentes, avec un nombre de photos différent mais rien n'y fait la calibration est toujours aussi mauvaise. De plus nous avons perdu l'accès au pc donc nous ne pouvons plus travailler sur le projet pour le moment.
 
@@ -79,3 +79,10 @@ Nous pensons que la qualité des caméras est peut être en partie responsable d
 Nous allons également essayer de faire une interface graphique avec Qt pour pouvoir afficher les images des caméras et pouvoir éventuellement changer les paramètres de ces dernières. Pour intégrer les caméras nous allons utiliser une API caméras (spinnaker). Il nous faut donc télécharger l'API spinnaker et l'installer. On nous donnera par la suite une autre application qui fera sensiblement la même chose qu'on devra améliorer sur la dernière version de Qt depuis une version 5.x de Qt. Cette application à améliorer consiste à afficher plusieurs caméras en même temps et de pouvoir les contrôler. Cette app utilise OpenGL.
 
 Nous avons ensuite passé une bonne partie de la journée à s'entrainer sur Qt et nous avons aussi essayer de changer le cablage des caméras pour voir si cela pouvait améliorer la calibration. Nous avons aussi essayé de changer les paramètres de calibration mais rien n'y fait.
+
+## 26/04/2024
+
+Nous avons passé l'ensemble de la journée à travailler sur Qt. Armand s'est concentré sur le code et à comment créer une interface graphique avec ce framework. Il a crée différentes pages avec des boutons qui réagissent quand on clique dessus mais il a surtout fait une page qui simule une interface qur laquelle on peut changer les paramètres des caméras avec des LineInput, des labels et des sliders.
+
+De mon côté j'ai passé une grande partie de la journée a comprendre comment lier l'API Spinnaker et Qt, en effet nous avons besoin de cette API pour lire les images des caméras ainsi que pour changer ces paramètres. L'import de l'API sur linux fut assez simple cependant l'import sur windows provoque une erreur à la compilation du projet comme si les fichiers c++ de spinnaker n'arrivent pas à être compris. 
+La documentation sur l'import de l'API sur windows est assez pauvre et je n'ai pas encore de solution. Si aucune solution n'est trouvé nous devrons certainement tou faire sur linux.
