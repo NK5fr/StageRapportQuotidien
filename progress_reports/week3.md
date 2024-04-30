@@ -23,3 +23,9 @@ Voici un lien utile pour comprendre le focntionnement de spinnaker :
 - https://flir.custhelp.com/app/answers/detail/a_id/4327/~/flir-spinnaker-sdk---getting-started-with-the-spinnaker-sdk
 
 De son côté Armand à réussi à faire la combobox mais il n'a pas pu le faire proprement à cause du fait que les enum c++ sont moins performant que ceux en java. Il va donc chercher une solution autre en utilisant une map à la place de l'enum.
+
+## 30/04/2024
+
+Nous avons continué le travaille de la veille, Armand cherche encore une solution pour optimiser les combobox pour pouvoir changer les paramètres de la caméra tout en eyant un code propre et facilement étendable. Peronnellement je suis à la recherche d'une autre méthode pour afficher le flux vidéo des caméras ainsi j'ai trouvé ce dépot github qui pourrait être utile https://github.com/sleepbysleep/FLIR_camera_wrapper_for_Qt5_and_PyQt5;
+
+J'ai appliqué ce que j'ai trouvé dans ce lien mais cela ne focntionne pas car l'appli crash dès qu'on lui demande d'afficher les images. Cependant nous avons bien un appel à la fonction d'affichage qui est fait avec un signal. j'ai ensuite passé le reste de la journée à essayer d'intaller cuda sur le nouveau pc pour pouvoir utiliser opencv si besoin mais j'ai rencontré de nombreux problèmes lors de l'installation des drivers nvidia. Et malgrès avec regardé pendant longtemps sur internet je n'ai pas trouvé de solution. J'ai donc essayé d'utiliser l'ancien pc pour utiliser opencv et éviter que l'appline crash mais le résultat est le même. En attendant de trouver une solution plus appropriée j'ai remis la solution d'hier pour afficher le rendu caméra.
