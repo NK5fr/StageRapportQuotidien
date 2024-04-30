@@ -27,13 +27,10 @@ Il a fait de même pour les Slider & pour les comboBox, mais cette dernière s'a
 
 ## 30/04/24
 
+Nous avons continué le travaille de la veille, Armand cherche encore une solution pour optimiser les combobox pour pouvoir changer les paramètres de la caméra tout en eyant un code propre et facilement étendable. Peronnellement je suis à la recherche d'une autre méthode pour afficher le flux vidéo des caméras ainsi j'ai trouvé ce dépot github qui pourrait être utile https://github.com/sleepbysleep/FLIR_camera_wrapper_for_Qt5_and_PyQt5;
+
 Armand de son côté a fini les comboBox, en choissisant une implémentation plus simple en prennant le parti que la classe LinkedComboBox (celle qu'il faisait) ne devrait s'occuper uniquement que de faire le lien entre l'affichage du label et de ce qui est choisi par l'utilisateur.
 
 Il a ensuite changer son code afin de faire fonctionner tout cela via une seconde fenêtre, et a changer une LinkedEditLine afin qu'elle maitrise le maximum du slider.
-
-
-## 30/04/2024
-
-Nous avons continué le travaille de la veille, Armand cherche encore une solution pour optimiser les combobox pour pouvoir changer les paramètres de la caméra tout en eyant un code propre et facilement étendable. Peronnellement je suis à la recherche d'une autre méthode pour afficher le flux vidéo des caméras ainsi j'ai trouvé ce dépot github qui pourrait être utile https://github.com/sleepbysleep/FLIR_camera_wrapper_for_Qt5_and_PyQt5;
 
 J'ai appliqué ce que j'ai trouvé dans ce lien mais cela ne focntionne pas car l'appli crash dès qu'on lui demande d'afficher les images. Cependant nous avons bien un appel à la fonction d'affichage qui est fait avec un signal. j'ai ensuite passé le reste de la journée à essayer d'intaller cuda sur le nouveau pc pour pouvoir utiliser opencv si besoin mais j'ai rencontré de nombreux problèmes lors de l'installation des drivers nvidia. Et malgrès avec regardé pendant longtemps sur internet je n'ai pas trouvé de solution. J'ai donc essayé d'utiliser l'ancien pc pour utiliser opencv et éviter que l'appline crash mais le résultat est le même. En attendant de trouver une solution plus appropriée j'ai remis la solution d'hier pour afficher le rendu caméra.
