@@ -22,7 +22,15 @@ Voici un lien utile pour comprendre le focntionnement de spinnaker :
 
 - https://flir.custhelp.com/app/answers/detail/a_id/4327/~/flir-spinnaker-sdk---getting-started-with-the-spinnaker-sdk
 
-De son côté Armand à réussi à faire la combobox mais il n'a pas pu le faire proprement à cause du fait que les enum c++ sont moins performant que ceux en java. Il va donc chercher une solution autre en utilisant une map à la place de l'enum.
+De son côté Armand à refactorisé son code afin d'avoir des classes pouvant lier un Label et un élément QT, comme avec les EditLine.
+Il a fait de même pour les Slider & pour les comboBox, mais cette dernière s'avère compliquée car les enum en c++ sont moins performant qu'en Java, il cherche a faire une méthode pouvant remplir une ComboBox avec tous les élements d'une énumération, mais cela s'avère trop compliqué & il essaye donc de faire cela avec une map.
+
+## 30/04/24
+
+Armand de son côté a fini les comboBox, en choissisant une implémentation plus simple en prennant le parti que la classe LinkedComboBox (celle qu'il faisait) ne devrait s'occuper uniquement que de faire le lien entre l'affichage du label et de ce qui est choisi par l'utilisateur.
+
+Il a ensuite changer son code afin de faire fonctionner tout cela via une seconde fenêtre, et a changer une LinkedEditLine afin qu'elle maitrise le maximum du slider.
+
 
 ## 30/04/2024
 
