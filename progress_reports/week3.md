@@ -49,3 +49,9 @@ Armand:
 - Ajout de la page des paramètres
 - Importation du code fait en amont
 - Ajout de la fonctionnalitée du Slider pour l'exposure ainsi qu'un bouton pour activer automatiquement le temps d'exposure automatique -> empêche l'utilisateur de changer la valeur manuellement.
+
+## 02/05/24
+
+Pour ce début de journée je me suis replongé dans les exemples de spinnaker pour trouver comment faire pour récupérer les images grâce à un event Spinnaker. Dans le code source il est possible de trouver un dossier imageEvent contenant un fichier c++ expliquant comment se déroule la récupération d'images via un event. J'ai appliqué ce que j'ai trouvé dans ce fichier à notre application et j'ai pu récupérer et afficher les images sans problème. J'ai clean le code pour enlever les parties plus utiles et j'ai enlevé le limiteur de fps. Sans ce dernier l'application bug je l'ai docn augmenté graduellement jusqu'à 60 fps et mon but maintenant c'est de trouver un moyen d'appliquer une limite de fps automatique. Après plusieurs tests j'ai remarqué que le nombre de fps est adapté sur mon pc pour ne pas faire lager mais sur le pc d'armand cela ne fonctionne pas et l'application lag. J'ai donc remis le limiteur de fps à 30 pour que l'application fonctionne correctement sur les deux pc. Le plus important c'est maintenant d'avoir une manière propre de récupérer les images et de les afficher sans problème. 
+
+J'ai passé une bonne partie de la journée à finir le rapport sur le projet de la première semaine.
