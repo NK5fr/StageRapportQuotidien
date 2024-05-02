@@ -22,18 +22,21 @@ Voici un lien utile pour comprendre le focntionnement de spinnaker :
 
 - https://flir.custhelp.com/app/answers/detail/a_id/4327/~/flir-spinnaker-sdk---getting-started-with-the-spinnaker-sdk
 
-De son côté Armand à refactorisé son code afin d'avoir des classes pouvant lier un Label et un élément QT, comme avec les EditLine.
-Il a fait de même pour les Slider & pour les comboBox, mais cette dernière s'avère compliquée car les enum en c++ sont moins performant qu'en Java, il cherche a faire une méthode pouvant remplir une ComboBox avec tous les élements d'une énumération, mais cela s'avère trop compliqué & il essaye donc de faire cela avec une map.
+Armand:
+- Refactorisé son code afin d'avoir des classes pouvant lier un Label et un élément QT, comme avec les EditLine.
+- Pareil pour les Slider & pour les comboBox, mais ce dernier s'avère compliquée car les enum en c++ sont moins performant qu'en Java, il cherche a faire une méthode pouvant remplir une ComboBox avec tous les élements d'une énumération, mais cela s'avère trop compliqué & il essaye donc de faire cela avec une map.
 
 ## 30/04/24
 
 Nous avons continué le travaille de la veille, Armand cherche encore une solution pour optimiser les combobox pour pouvoir changer les paramètres de la caméra tout en eyant un code propre et facilement étendable. Peronnellement je suis à la recherche d'une autre méthode pour afficher le flux vidéo des caméras ainsi j'ai trouvé ce dépot github qui pourrait être utile https://github.com/sleepbysleep/FLIR_camera_wrapper_for_Qt5_and_PyQt5;
 
-Armand de son côté a fini les comboBox, en choissisant une implémentation plus simple en prennant le parti que la classe LinkedComboBox (celle qu'il faisait) ne devrait s'occuper uniquement que de faire le lien entre l'affichage du label et de ce qui est choisi par l'utilisateur.
-
-Il a ensuite changer son code afin de faire fonctionner tout cela via une seconde fenêtre, et a changer une LinkedEditLine afin qu'elle maitrise le maximum du slider.
-
 J'ai appliqué ce que j'ai trouvé dans ce lien mais cela ne focntionne pas car l'appli crash dès qu'on lui demande d'afficher les images. Cependant nous avons bien un appel à la fonction d'affichage qui est fait avec un signal. j'ai ensuite passé le reste de la journée à essayer d'intaller cuda sur le nouveau pc pour pouvoir utiliser opencv si besoin mais j'ai rencontré de nombreux problèmes lors de l'installation des drivers nvidia. Et malgrès avec regardé pendant longtemps sur internet je n'ai pas trouvé de solution. J'ai donc essayé d'utiliser l'ancien pc pour utiliser opencv et éviter que l'appline crash mais le résultat est le même. En attendant de trouver une solution plus appropriée j'ai remis la solution d'hier pour afficher le rendu caméra.
+
+Armand: 
+- Fini les comboBox, en choissisant une implémentation plus simple en prennant le parti que la classe LinkedComboBox ne devrait s'occuper uniquement que de faire le lien entre l'affichage du label et de ce qui est choisi par l'utilisateur.
+
+- Changer son code afin de faire fonctionner tout cela via une seconde fenêtre, et a changer une LinkedEditLine afin qu'elle maitrise le maximum du slider.
+
 
 ## 01/05/24
 
@@ -41,4 +44,8 @@ Pour cette journée j'ai tenté de réinstaller les drivers nvidia, l'utilisatio
 
 Pour finir la journée (nous partons plus tôt car c'est un jour férié et on a pas pu manger car tout était fermé) j'ai commencé à écrire un rapport plus complet sur le projet de la première semaine qu'on va rendre à Tomas Holt. Pour l'instant j'ai écrit jusqu'à la fin de la permière semaine cad faire fonctionner les scripts de calibration des caméras.
 
-De son côté Armand a récupéré l'application avec le rendu caméra pour y implémenter le système de changement de paramètres de la caméras. Après avoir copié et adapté son code à l'application, on a pu avoir un slider gérant l'exposure de la caméra. On est aussi dans la posibilité d'activer et désactiver la caméra grâce à une checkbox.
+Armand:
+- Importation du projet,
+- Ajout de la page des paramètres
+- Importation du code fait en amont
+- Ajout de la fonctionnalitée du Slider pour l'exposure ainsi qu'un bouton pour activer automatiquement le temps d'exposure automatique -> empêche l'utilisateur de changer la valeur manuellement.
