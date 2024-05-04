@@ -56,8 +56,16 @@ Pour ce début de journée je me suis replongé dans les exemples de spinnaker p
 
 J'ai passé une bonne partie de la journée à finir le rapport sur le projet de la première semaine.
 
-Aramand:
+Armand:
 - Fait une nouvelle road map de ce que je dois faire
 - Refacto du code pour utiliser un fichier UI pour la page settings
 - Ajouts de divers bouton dont start & stop recording
 - Ajout de l'affichage du nom de la caméra et du vendeur
+
+## 03/05/24
+
+Armand:
+- Ajout d'une fenêtre spéciale qui affiche tous ce qui était codée précedemment
+- Lien des pages entre elles -> s'assure que des fenêtre zombies ne soit pas là quand leurs parents sont détruits
+- Ajout d'un slider gérant le gain de la caméra
+- Ajout d'un slider pour gérer le framerate fixé ainsi que le "vrai" framerate calculé
