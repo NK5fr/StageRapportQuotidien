@@ -61,3 +61,14 @@ Aramand:
 - Refacto du code pour utiliser un fichier UI pour la page settings
 - Ajouts de divers bouton dont start & stop recording
 - Ajout de l'affichage du nom de la caméra et du vendeur
+
+
+## 03/05/24
+
+Pour commencer cette journée on doit faire un récapitulatif de ce qu'il nous reste à faire. Il nous reste encore à ajouter d'autres paramètres changeables pour les caméras. Il faut égelement ajouter la gestion de la frame rate qu'on va faire à part car c'est un paramètre qui peut faire planter l'application si on le régule pas. On veut aussi faire un système pour gérer plusieurs caméras. Pour faire ce dernier on va changer la mainwindow pour une simple liste de caméras sur lesquelles on pourra clicker pour faire apparaitre une page secondaire qui gère le rendu de la caméra (cette page est celle qu'on a en mainwindow pour l'instant). Le problème c'est qu'on ne peux pas init plusieurs fois les caméras donc l'idée est d'initialiser toutes les caméras au constructeur de la mainwindow, de les conserver dans un tableau et lorsque qu'on veut ouvrir une caméra on transmet le camera pointer à la cameraWindget. Ainsi les caméras ne sont pas ouvertes plusieurs fois et on peut toutes les deInit à la fermeture de l'application.
+
+Nous ne voulons pas toucher le code en même temps pour cette restructuration car ça va poser beaucoup de problèmes. C'est donc Armand qui s'en charge. Il a pour l'instant créer les fichiers nécessaires et migré la mainwindow actuelle vers la cameraWidget, il ne reste plus maintenant qu'à gérer les caméras du mieux possible.
+
+J'ai ajouté à l'application une manière d'abtenir l'ensemble des caméras et de les ajouter à une LIstWidget. Lors d'un click sur un LIstWidgetItem un rendu de camera va être affiché selon l'index de l'item clické. Au départ le but était de capturer plusieurs rendus caméras en même temps mais il semble que c'est trop demandeur pour l'application donc maintenant on vérifie qu'il n'y a aucune caméra ouverte avant d'en allumer une autre. J'ai continé en ajoutant une manière de gérer si des caméras sont connectées ou déconnectées grâce à un bouton refresh qui refait les calculs pour trouver les caméras en cours de fonctionnement. Le système repère aussi si on tente de lancer une caméra débranchée et refresh tout en affichant un message d'erreur. 
+
+J'ai améliorer mon système de refresh avec un timer qui va refresh les caméras toutes les 3 secondes. J'ai également géré le cas où la caméra est débranchée pendant son fonctionnement et surveillant si la caméra est encore branchée au click d'un bouton et aussi avec un autre timer.
