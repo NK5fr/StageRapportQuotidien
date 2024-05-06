@@ -1,0 +1,13 @@
+## 06/05/2024
+
+Pour le premier jour de cette semaine je vais commencer par importer la projet sur un oridinateur du laboratoire pour l'avoir sur un pc linux. Je pourrais essayer de lier le dépot github mais j'ai peur des problèmes de compatibilité entre nwindows et linux donc je vais me contenter de copier les fichiers à la main. Une fois cela fait je vérifie que le projet tourne bien  sur cet oridinateur et je fais quelques changement de style.
+
+Il est difficile de dire ce qu'il nous faut rajouter mise à part plus de paramètres donc on va se contenter d'en ajouter un maximum.
+
+Armand a quand même du corriger quelques erreurs. En effet à cause des différents refresh que j'ai rajouté dans le code, les caméras ne changeait pas de frame rate car il y avait un reset toutes les 3 secondes remettant leur frame rate à 30. Pendant que le rendu caméras est ouvert on stop le refresh. J'ai également changé le calcul automatique de la frame rate, au lieu de la calculer dans le flir_camera on le calcul dans le cameraWidget. A chaque image prise, on calcul avec un produit en croix les fps de la caméras si toutes les images était récupérées à la vitesse de celle prise. On additionne toutes ces estimation et si on a pris plus de x images on affiche la moyenne c'est à dire la somme des estimations de fps divisé par x et on reset la somme et le compteur. x est égal aux fps fixe de la caméra. Si les fps sont fixés à 4 on affiche la moyenne si le compteur est à 4 ou plus. J'ai aussi ajouté le fait que les fps changent quand on appuie sur pause ou play.
+
+Armand a également importé le projet sur un pc windows du laboratoire.
+
+J'ai changé le fichier .ui de editParameters pour ajouter les changements de paramètres que je voudrait ajouter par la suite.
+
+J'ai commencé par finir l'exposure time en ajoutant un minimum (tout le reste était déjà rempli). J'ai ensuite ajouté le gain en me basant sur le code de l'exposure time. C'est à dire un slider pour changer la valeur, un minimum modifiable pour le slider, un maximum modifiable pour le slider et une checkbox pour activer ou non le slider. J'en ensuite ajouté le paramètre triggerSource et triggerMode pour pouvoir utiliser la "triggerBox" sur notre application. Tout à bien fonctionné donc j'ai ajouté également un maximum pour le frame rate car l'application bug si c'est trop élevé en raison du nombre d'images récupérés qui est trop haut. L'application bug parfois quand on met à 60 fps mais j'en connais pas la raison et je ne sais pas vraiment si on peut y faire quelque chose.
