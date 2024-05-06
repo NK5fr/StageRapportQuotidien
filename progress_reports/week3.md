@@ -56,14 +56,19 @@ Pour ce début de journée je me suis replongé dans les exemples de spinnaker p
 
 J'ai passé une bonne partie de la journée à finir le rapport sur le projet de la première semaine.
 
-Aramand:
+Armand:
 - Fait une nouvelle road map de ce que je dois faire
 - Refacto du code pour utiliser un fichier UI pour la page settings
 - Ajouts de divers bouton dont start & stop recording
 - Ajout de l'affichage du nom de la caméra et du vendeur
 
-
 ## 03/05/24
+
+Armand:
+- Ajout d'une fenêtre spéciale qui affiche tous ce qui était codée précedemment
+- Lien des pages entre elles -> s'assure que des fenêtre zombies ne soit pas là quand leurs parents sont détruits
+- Ajout d'un slider gérant le gain de la caméra
+- Ajout d'un slider pour gérer le framerate fixé ainsi que le "vrai" framerate calculé
 
 Pour commencer cette journée on doit faire un récapitulatif de ce qu'il nous reste à faire. Il nous reste encore à ajouter d'autres paramètres changeables pour les caméras. Il faut égelement ajouter la gestion de la frame rate qu'on va faire à part car c'est un paramètre qui peut faire planter l'application si on le régule pas. On veut aussi faire un système pour gérer plusieurs caméras. Pour faire ce dernier on va changer la mainwindow pour une simple liste de caméras sur lesquelles on pourra clicker pour faire apparaitre une page secondaire qui gère le rendu de la caméra (cette page est celle qu'on a en mainwindow pour l'instant). Le problème c'est qu'on ne peux pas init plusieurs fois les caméras donc l'idée est d'initialiser toutes les caméras au constructeur de la mainwindow, de les conserver dans un tableau et lorsque qu'on veut ouvrir une caméra on transmet le camera pointer à la cameraWindget. Ainsi les caméras ne sont pas ouvertes plusieurs fois et on peut toutes les deInit à la fermeture de l'application.
 
