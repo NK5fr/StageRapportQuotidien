@@ -1,6 +1,6 @@
 ## 06/05/2024
 
-Pour le premier jour de cette semaine je vais commencer par importer la projet sur un oridinateur du laboratoire pour l'avoir sur un pc linux. Je pourrais essayer de lier le dépot github mais j'ai peur des problèmes de compatibilité entre nwindows et linux donc je vais me contenter de copier les fichiers à la main. Une fois cela fait je vérifie que le projet tourne bien  sur cet oridinateur et je fais quelques changement de style.
+Pour le premier jour de cette semaine je vais commencer par importer la projet sur un oridinateur du laboratoire pour l'avoir sur un pc linux. Je pourrais essayer de lier le dépot github mais j'ai peur des problèmes de compatibilité entre windows et linux donc je vais me contenter de copier les fichiers à la main. Une fois cela fait je vérifie que le projet tourne bien  sur cet oridinateur et je fais quelques changement de style.
 
 Il est difficile de dire ce qu'il nous faut rajouter mise à part plus de paramètres donc on va se contenter d'en ajouter un maximum.
 
