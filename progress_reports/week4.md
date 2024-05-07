@@ -26,5 +26,5 @@ Le calcul automatique du maximum pose problème quand il est trop haut car si tr
 
 Armand:
 - Fixe la taille des différentes pages
-- Ajout d'un slider afin de pouvoir zoomer sur la page
+- Ajout d'un slider afin de pouvoir changer le zoom de la caméra
 - Gère quand le controlleur & la page de settings se ferme (quand on clique n'importe où d'autre)
