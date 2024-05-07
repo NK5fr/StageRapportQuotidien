@@ -23,3 +23,8 @@ Pour commencer la journée je me suis renseigner un peu sur comment créer un bo
 
 J'ai ensuite ajouté dans le projet un calcul automatique du maximum de fps possibles car selon le pc et le moment ça peut changer.
 Le calcul automatique du maximum pose problème quand il est trop haut car si trop d'images sont récupérées tout bug. J'ai donc ajouté une limité à 60 fps.
+
+Armand:
+- Fixe la taille des différentes pages
+- Ajout d'un slider afin de pouvoir zoomer sur la page
+- Gère quand le controlleur & la page de settings se ferme (quand on clique n'importe où d'autre)
