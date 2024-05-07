@@ -28,3 +28,9 @@ Armand:
 - Fixe la taille des différentes pages
 - Ajout d'un slider afin de pouvoir changer le zoom de la caméra
 - Gère quand le controlleur & la page de settings se ferme (quand on clique n'importe où d'autre)
+
+On réfléchit à quoi ajouter dans l'application mais nous pensons avoir accomplit l'objectif et plus encore donc on tente d'ajouter des fonctionnalités pour le plaisir mais on commence à être à cours d'idée.
+
+On a envoyé un mail à notre superviseur la semaine dernière mais pas de réponse pour l'instant. On ne sait pas combien de temps il va rester en vacances.
+
+J'ai finalement trouvé une fonctionnalité à ajouter qui est la prise de photo. J'ai pas eu trop de mal à l'implémenter et ça a focntionné direct j'ai donc fini la journée en ajoutant de la documentation au code.
