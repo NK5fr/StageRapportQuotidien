@@ -11,3 +11,8 @@ Armand a également importé le projet sur un pc windows du laboratoire.
 J'ai changé le fichier .ui de editParameters pour ajouter les changements de paramètres que je voudrait ajouter par la suite.
 
 J'ai commencé par finir l'exposure time en ajoutant un minimum (tout le reste était déjà rempli). J'ai ensuite ajouté le gain en me basant sur le code de l'exposure time. C'est à dire un slider pour changer la valeur, un minimum modifiable pour le slider, un maximum modifiable pour le slider et une checkbox pour activer ou non le slider. J'en ensuite ajouté le paramètre triggerSource et triggerMode pour pouvoir utiliser la "triggerBox" sur notre application. Tout à bien fonctionné donc j'ai ajouté également un maximum pour le frame rate car l'application bug si c'est trop élevé en raison du nombre d'images récupérés qui est trop haut. L'application bug parfois quand on met à 60 fps mais j'en connais pas la raison et je ne sais pas vraiment si on peut y faire quelque chose.
+
+Armand:
+- correction bug framerate
+- enorme refacto utils
+- problèmes d'ordinateur & de git
