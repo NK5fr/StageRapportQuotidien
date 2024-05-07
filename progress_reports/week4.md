@@ -16,3 +16,10 @@ Armand:
 - correction bug framerate
 - enorme refacto utils
 - problèmes d'ordinateur & de git
+
+## 07/05/2024
+
+Pour commencer la journée je me suis renseigner un peu sur comment créer un bon rapport de stage en utilisant markdown. et LaTex pour convertir en pdf. J'ai ensuite fait quelques sur un fichier markdown au hasard et j'ai eu des résultats satisfaisant donc je pense utiliser cette méthode pour le rapport de stage. Cette partie n'avait rien à voir avec le projet mais je pense que c'est important de se renseigner sur comment faire un bon rapport de stage.
+
+J'ai ensuite ajouté dans le projet un calcul automatique du maximum de fps possibles car selon le pc et le moment ça peut changer.
+Le calcul automatique du maximum pose problème quand il est trop haut car si trop d'images sont récupérées tout bug. J'ai donc ajouté une limité à 60 fps.
