@@ -35,3 +35,17 @@ Armand:
 - Ajout d'un slider afin de pouvoir changer le zoom de la caméra
 - Gère quand le controlleur & la page de settings se ferme (quand on clique n'importe où d'autre)
 - Refacto connections, rendu le code plus propre, ajout de doc
+
+## 08/05/2024
+
+Nous n'avons pas fait grand chose ce matin au niveau du projet mise à part quelques suppressions de fonction inutiles et quelques divisions de fonctions en plsusieurs autres. Pour passer le temps on a testé la création d'une app Qt en python.
+
+Nous avons un meeting prévu à 16h pour parler su projet et de l'application.
+
+Nous avons aussi supprimé un élément lorsqu'on change l'image de taille pour correspondre au label pour voir si ça allait accéléré l'affichage de l'image et ça a eu l'air de marcher donc on a laissé comme ça. Cependant je suis pas sur de savoir si c'est une cohencidence ou non.
+
+Nous attendons le meeting de 16h en même temps que de réfléchir si il y a des choses à ajouter.
+
+Nous avons présenté le projet à nos superviseurs lors du meeting. Ils ont été satisfait du projet car ça nous a fait une bonne base pour la suite. Ils nous ont ensuite montré l'ancienne application avec ses fonctionnalités. Ils nous ont montré ce qu'il fallait faire marcher sur les dernières version de spinnaker et Qt. Ils nous ont passé différentes versions du projet et améliorer. Notre but dans les prochaines semaines est donc de faire marcher l'application sur les dernières versions de spinnaker et Qt.
+
+L'application à améliorer sert globalement à faire du motion capture en 3D grâce à des caméras et des capteurs.

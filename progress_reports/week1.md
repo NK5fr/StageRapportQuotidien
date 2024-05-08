@@ -5,6 +5,7 @@
 Le projet nous à été introduit par notre superviseur aujourd'hui, le projet consiste à avoir calculer la distance entre un duo de caméras et un objet visible par ces dernières. Le principe est expliqué ici https://www.flir.eu/discover/iis/machine-vision/how-to-build-a-custom-embedded-stereo-system-for-depth-perception/. 
 
 Le matériel utilisé pour le projet est le suivant:
+
 - 2 caméras FLIR Blackfly S BFS-U3-13Y3C-C
 - 2 cables USB3.0 -> micro B pour connecter les caméras à l'ordinateur
 - 1 boitier contenant un script permettant de synchroniser les caméras
