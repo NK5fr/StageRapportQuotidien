@@ -55,3 +55,34 @@ Armand:
 - Changement du nom des images sauvegardées selon la date & le numéro de la frame
 - Fix de petits bug
 - On avait pas grand chose a faire aujourd'hui donc c'est tout
+
+## 09/05/2024
+
+Nous avons commencé par prendre connaissance du projet, en effet nous pouvont y trouver une bonne documentation et de bonnes informations pour le projet. Nous avons importé le projet sur Qt et nous sommes en train de regarder les fichiers à importer pour faire marcher l'application. Premièrement nous avons changer l'import de librairie dans le fichier .pro pour lui dire d'importer Spinnaker. Ensuite on essaye d'adapter les import de Qt parce que certains fichiers de Qt ont été changé de place ou supprimé avec les nouvelles versions. On a pour le moment utiliser la dernière version de Qt 6.7.0 avec les includes de Spinnaker déjà dans le projet mais on changera les includes si besoin.  
+
+Voici une liste des changements à faire de Qt 5 à Qt 6 que nous avons trouvé:
+
+- la classe QAction qui était dans QtWidgets est maintenant dans QtGui
+- QtOpenGl/QGL est maintenant remplacé par QyOpenGL
+- qopenglwidget est maintenant dans QtOpenGLWidget/QOpenGLWidget
+- La classe QTreeWidgetItem ne possède plus de focntion setBackground mais doit être remplacé par setBackground
+- QtNetwork/qnetworkconfiguration.h, QtNetwork/qnetworkconfigmanager.h QtNetwork/qnetworksession.h sont dépréciés et on n'a pas trouvé de substitution donc on supprime.
+- la classe QGLWidget est remplacé par la classe QOpenGLWidget
+- la méthode swap de Qlist est remplacé par la méthode swapItemsAt
+- QString::skipEmptyParts est remplacé par Qt::SkipEmptyParts
+- Il n'est pas possible de fait QString != null donc on fait QString.isNull()
+- Une des méthodes veut renvoyer un QPixmap* mais renvoie un QPixmap donc on a changé le type de retour pour QPixmap.
+- La méthode delta() de QWheelEvent est remplacé par angleDelta().y()  
+- La méthode setTabStopWidth de QPlainTextEdit est remplacé par setTabStopDistance
+- La méthode width de QFontMetrics est remplacé par horizontalAdvance
+- on a eu une erreur "member access into incomplete type 'QScrollBar'" donc on a ajouté un include de QScrollBar
+- On a dû également include QDialogButtonBox
+- On a dû également include QMessagebox
+- Comme dit plus haut on a dû changer QGLWidget par QOpenGLWidget donc il faut remplacer l'appel à la méthode updateGL par update
+- On aussi eu un problème avec la méthode std::min car les deux paramètres n'étaient pas du même type donc on a rajouté un cast int pour le deuxième paramètre
+
+Après avoir changé tous ces problèmes on a du faire face à un autre problème, en effet en plus de spinnaker le projet de base utilise flycamera pour récupérer les images des caméras. C'est en quelque sorte l'ancêtre de Spinnaker et il est trop vieux pour l'utiliser avec notre version  d'ubuntu, on supprime donc toute référence à ça dans le projet. 
+
+On a énsuite tenté d'importer les librairies d'OpenGL au projet car le projet ne reconnaissait pas les classes d'OpenGL. On a docn installé GLU mais même en ajoutant la librairie ça n'a pas marché. On a donc ajouté openglwidget dans le .pro aux widgets et ça a l'air de marcher pour l'instant.
+
+On a aussi ajouté un constructeur dans ImageLabel car il n'y en avait pas. L'application a fonctionné mais le rendu des caméras n'a pas eu l'air de marcher pour l'instant. Le code nous renvoie une erreur comme quoi il manque un fichier de settings donc on va essayer de le chercher.  
