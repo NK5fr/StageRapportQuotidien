@@ -49,3 +49,9 @@ Nous attendons le meeting de 16h en même temps que de réfléchir si il y a des
 Nous avons présenté le projet à nos superviseurs lors du meeting. Ils ont été satisfait du projet car ça nous a fait une bonne base pour la suite. Ils nous ont ensuite montré l'ancienne application avec ses fonctionnalités. Ils nous ont montré ce qu'il fallait faire marcher sur les dernières version de spinnaker et Qt. Ils nous ont passé différentes versions du projet et améliorer. Notre but dans les prochaines semaines est donc de faire marcher l'application sur les dernières versions de spinnaker et Qt.
 
 L'application à améliorer sert globalement à faire du motion capture en 3D grâce à des caméras et des capteurs.
+
+Armand:
+- Ajout d'un bouton afin de pouvoir choisir où sauvegarder une image prise depuis l'application
+- Changement du nom des images sauvegardées selon la date & le numéro de la frame
+- Fix de petits bug
+- On avait pas grand chose a faire aujourd'hui donc c'est tout
