@@ -81,8 +81,10 @@ Voici une liste des changements à faire de Qt 5 à Qt 6 que nous avons trouvé:
 - Comme dit plus haut on a dû changer QGLWidget par QOpenGLWidget donc il faut remplacer l'appel à la méthode updateGL par update
 - On aussi eu un problème avec la méthode std::min car les deux paramètres n'étaient pas du même type donc on a rajouté un cast int pour le deuxième paramètre
 
-Après avoir changé tous ces problèmes on a du faire face à un autre problème, en effet en plus de spinnaker le projet de base utilise flycamera pour récupérer les images des caméras. C'est en quelque sorte l'ancêtre de Spinnaker et il est trop vieux pour l'utiliser avec notre version  d'ubuntu, on supprime donc toute référence à ça dans le projet. 
+Après avoir changé tous ces problèmes on a du faire face à un autre problème, en effet en plus de spinnaker le projet de base utilise flycamera pour récupérer les images des caméras. C'est en quelque sorte l'ancêtre de Spinnaker et il est trop vieux pour l'utiliser avec notre version  d'ubuntu, on supprime donc toute référence à ça dans le projet, ce qui malheuresement supprime la compabilité avec les caméras plus anciennes (caméra FireFly)
 
-On a énsuite tenté d'importer les librairies d'OpenGL au projet car le projet ne reconnaissait pas les classes d'OpenGL. On a docn installé GLU mais même en ajoutant la librairie ça n'a pas marché. On a donc ajouté openglwidget dans le .pro aux widgets et ça a l'air de marcher pour l'instant.
+On a ensuite tenté d'importer les librairies d'OpenGL au projet car le projet ne reconnaissait pas les classes d'OpenGL. On a donc installé GLU mais même en ajoutant la librairie ça n'a pas marché. On a donc ajouté openglwidget dans le .pro aux widgets et ça a l'air de marcher pour l'instant.
 
-On a aussi ajouté un constructeur dans ImageLabel car il n'y en avait pas. L'application a fonctionné mais le rendu des caméras n'a pas eu l'air de marcher pour l'instant. Le code nous renvoie une erreur comme quoi il manque un fichier de settings donc on va essayer de le chercher.  
+On a aussi ajouté un constructeur dans ImageLabel car il n'y en avait pas et que l'application en réclamée un. Après l'avoir ajouté, l'application s'est lancée.
+
+Mais le rendu des caméras n'a pas eu l'air de marcher pour l'instant. Le code nous renvoie une erreur comme quoi il manque un fichier de settings donc on va essayer de le chercher.
