@@ -88,3 +88,16 @@ On a ensuite tenté d'importer les librairies d'OpenGL au projet car le projet n
 On a aussi ajouté un constructeur dans ImageLabel car il n'y en avait pas et que l'application en réclamée un. Après l'avoir ajouté, l'application s'est lancée.
 
 Mais le rendu des caméras n'a pas eu l'air de marcher pour l'instant. Le code nous renvoie une erreur comme quoi il manque un fichier de settings donc on va essayer de le chercher.
+
+## 10/05/2024
+
+Nous commençons la journée en analysant le code pour trouver pourquoi le rendu des caméras ne marche pas. Nous esseyons de monter de classe en classe pour comprendre ce qui se passe. Après quelques heures de recherches on s'est rendu compte que le trigger mode est incorrect. En effet le trigger mode est mis à "on" alors que le trigger source est mis à "software" et que le trigger selector est mis à FrameStart. On a donc changé le code pour mettre à "on" seulement si la source est autre que software (le trigger selector restera le même). On a ensuite testé et ça a marché. 
+
+Armand a ensuite travaillé sur l'import de settings depuis un fichier car certains paramètres étaient incorrects et ont dû être modifié pour correspondre à ceux de la caméra. Je me suis personnelement renseigné sur le fonctionnement du trigger et comprendre ces paramètres de spinView.  
+
+Pour le problème du trigger mode, on a réalisé qu'en fait lorsqu'il est sur off les images ne seront pas récupéré par un signal mais plustôt de manière continue par rapport aux paramètres de la caméra. Au contraire le trigger mode "on" attend un signal pour récupérer une image. On a donc changé le code pour que le trigger mode soit à off car si nous n'utilisons pas la trigger box on a aucun moyen d'envoyer un signal.
+
+On essaie depuis quelques heures de décortiquer le code pour comprendre l'import de paramètres depuis un fichier car cet import provoque une erreur au niveau du trigger que nous n'avons pas encore trouvé. Le problème vient du fait qu'il nous est impossible de récupérer les images en "auto trigger" car le cela implique d'utiliser le trigger software qui n'existe pas car notre trigger mode est à off et les images ne sont pas récupérées par un signal. Le code présent à la récupération d'image à propos du trigger software est donc mis en commentaire.
+
+Nous avons ensuite tenté d'utiliser le bouton pour prendre une image par image mais ça n'a pas marché et l'application a planté dès le début. Grâce au message d'erreur on a pu voir que le lancement et l'arrêt de l'acquisition d'image était différent, peut être plus ancien que ce qui est fait maintenant. On a donc changé le code pour que l'acquisition d'image soit plus correct mais ça a tout de même planté. 
+Après inspection du code j'ai remarqué que les données de l'image prise sont sauvegardées dans un buffer puis l'image est supprimée. J'ai déjà remarqué que la suppression d'une image dont les données sont utilisées ailleur provoque un crash. Pour le moment même si je suis pas sûr de si c'est la meilleure option je vais supprimer le supression de l'image. Ca a fonctionné mais on va peut être essayer de trouver une autre solution.
