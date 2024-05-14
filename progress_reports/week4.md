@@ -65,7 +65,7 @@ Voici une liste des changements à faire de Qt 5 à Qt 6 que nous avons trouvé:
 - la classe QAction qui était dans QtWidgets est maintenant dans QtGui
 - QtOpenGl/QGL est maintenant remplacé par QyOpenGL
 - qopenglwidget est maintenant dans QtOpenGLWidget/QOpenGLWidget
-- La classe QTreeWidgetItem ne possède plus de focntion setBackground mais doit être remplacé par setBackground
+- La classe QTreeWidgetItem ne possède plus de fonction setBackgrounds mais doit être remplacé par setBackground
 - QtNetwork/qnetworkconfiguration.h, QtNetwork/qnetworkconfigmanager.h QtNetwork/qnetworksession.h sont dépréciés et on n'a pas trouvé de substitution donc on supprime.
 - la classe QGLWidget est remplacé par la classe QOpenGLWidget
 - la méthode swap de Qlist est remplacé par la méthode swapItemsAt

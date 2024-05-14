@@ -18,3 +18,13 @@ Nous avons également commenté des lignes à propos de threads qui provoquent u
 Nous avons aussi une autre erreur qui est que lorsqu'on essaie de fermer la fenêtre d'une caméra l'application plante. L'erreur vient du fait que lorsqu'on envoie l'image on ne vérifie pas si le fenêtre est fermée ou non. Nous avons donc rajouté une vérification pour voir si la fenêtre est fermée ou non et si elle est fermée on n'envoie pas d'image.
 
 Pour finir la journée nous avons corrigé une action d'un bouton qui ne fonctionnait pas. En effet il y avait un bouton permettant de gérer l'activation du tracker de la souris sur les images mais il n'y avait pas d'action associé à ce bouton. Après divers recherches nous avons trouvé quoi lancer à l'activation de ce bouton et nous avons donc associé une action.
+
+## 14/05/2024
+
+Pendant le début de cette journée nous avons principalement fait des recherches sur les rapports de stage et sur ce qu'on va mettre dedans. On s'est aussi renseigné sur markdown mais il semble finalement que certains aspect du rapport sont difficiles à faire et que google docs apporte également des outils efficaces pour un meilleur rendu.
+
+On a ensuite fait un mini meeting avec Tomas Holt pour voir ce qui est à faire pour la suite du projet car nous avons corrigé de nombreuses fonctionnalité et on avait beaucoup de question sur qu'il nous restait encore à faire et à quel point pouvont nous modifier l'application. 
+
+Après ce mini meeting nous avons cherché à compiler le projet sur windows sans succès. Il semblerait que le version du compilateur c++ n'est pas correct mais même après avoir changé la version et testé plusieurs options nous n'avons pas réussi à compiler le projet. Nous avions déjà eu cette erreur avant mais c'était avec un projet contruit différament donc nous ne pouvons pas corriger l'erreur comme on l'avait déjà fait.
+
+On a passé ensuite le reste de la journée à résoudre ce problème. Cependant nous n'avons pas réussi à avoir de bons résultats et nous ne sommes même pas sûr de où provient vraiment le problème. Nous avons trouvé que le problème venait d'un fichier nommé qmake.stash il semblerait qu'il contient de fausses indications à propos du compilateur c++ donc on l'a supprimé temporairement pour voir si ça changeait quelque chose. Nous n'avons plus l'erreur mais nous en avons d'autres car nous devons régler de nombreux problèmes de librairies et de dépendances.
