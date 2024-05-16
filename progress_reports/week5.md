@@ -50,3 +50,8 @@ Armand:
 ## 16/05/2024
 
 Pour commencer la journée j'ai testé quelques fonctionnalités de l'application sur windows pour voir si tout est bien connecté. J'ai remarqué rapidement qu'il n'y avait pas de paramètres de caméra. La raison était que certain fichier n'était pas présent dans le projet, certainement que nous les avons supprimé sans faire exprès lors de leur manipulation. J'ai donc récupéré ces fichiers dans les backups et j'ai pu lancer l'application correctement en les ajoutant dans les fichiers.
+
+Maintenant qu'on peut lancer le code sur windows, il ne reste plus qu'à améliorer l'application. Il y a quelques ajouts qu'on pourrait faire comme une checkbox pour activer la couleur ou mettre des événements sur la toolbar en haut de l'application ainsi qu'ajouter des raccourcis clavier pour les boutons de la toolbar... La priorité cependant est de déjà nettoyer le code, il y a beaucoup de parties sur FlyCapture qui ne sont pas utilisées et qui sont inutiles. Il faudrait donc les enlever pour que le code soit plus lisible et plus facile à comprendre. Il y a également beaucoup d'import dans le fichier .pro losqu'on utilise windows et je ne sais pas si ils servent vraiment tous. Il faudrait voir ce qui est supprimable ou non.
+
+Cependant je n'ai pas commencé tout ça maintenant j'ai plutôt commencé à rédiger un rapport sur l'évolution de Camera Manager. Ce rapport contiendra toutes les indications d'installation. Ce qu'il faut changer pour faire touner sur les dernières versions. Ce qu'on a ajouté au code. En somme il y aura tout sur comment passer de 2019CameraManager à 2024CameraManager.
+
