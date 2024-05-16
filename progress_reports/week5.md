@@ -41,6 +41,12 @@ J'ai enfin réglé les problèmes de GLU.h, en effet le fichier gl.h qui est né
 
 Finalement il restait beaucoup de "using namespace std" dans le code j'ai donc tout supprimé et j'ai adapté le code. j'ai dû remplacer certains max et min par qMax et qMin car le code n'arrivait pas à trouver std::max et std::min en raison du fait qu'il voulait absolument prendre max et min des fichiers windows (inutilisable sur linux). J'ai pu compiler et lancer l'application.
 
+Armand:
+- J'ai passé la matinée a faire des recherches sur l'erreur de GLU que Nathan rencontrait, mais je n'ai rien trouvé, je suis donc passé sur la résolutions de certains problèmes sur Linux
+- Résolution des "incorrect sRGB profile" warning pour les icones
+- J'ai passé le reste de la journée a traquer les erreurs de Thread, mais je n'ai pas eu le temps de trouver la source du problème et de le résoudre, même si j'ai trouvé quel méthode / quel instruction semble causé ce problème. La solutions serait surement de "simplement" recoder la détéction des caméras, qui est la cause du problème.
+
+
 ## 16/05/2024
 
 Pour commencer la journée j'ai testé quelques fonctionnalités de l'application sur windows pour voir si tout est bien connecté. J'ai remarqué rapidement qu'il n'y avait pas de paramètres de caméra. La raison était que certain fichier n'était pas présent dans le projet, certainement que nous les avons supprimé sans faire exprès lors de leur manipulation. J'ai donc récupéré ces fichiers dans les backups et j'ai pu lancer l'application correctement en les ajoutant dans les fichiers.
