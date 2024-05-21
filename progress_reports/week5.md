@@ -55,3 +55,14 @@ Maintenant qu'on peut lancer le code sur windows, il ne reste plus qu'à amélio
 
 Cependant je n'ai pas commencé tout ça maintenant j'ai plutôt commencé à rédiger un rapport sur l'évolution de Camera Manager. Ce rapport contiendra toutes les indications d'installation. Ce qu'il faut changer pour faire touner sur les dernières versions. Ce qu'on a ajouté au code. En somme il y aura tout sur comment passer de 2019CameraManager à 2024CameraManager.
 
+Armand:
+
+J’ai continuer les recherches sur les Thread sans toujours trouver la raison du problème, et je me suis 
+donc penché sur un problème sous Windows que nous avons qui fait que l’image récupérée par la 
+caméra ne semble pas prendre toute la taille de la fenêtre sous Windows, tandis qu’elle prend toute la 
+place dans la fenêtre sous Linux. 
+J’ai aussi cherché et trouvé où ce calcul était fait, mais je ne comprends pas d’où vient l’erreur, étant 
+donné qu’il semble que sous Windows, le programme ne comprends pas la vraie taille de la fenêtre. Le 
+calcul est bon mais la donnée qu’il récupère ne semble pas être la bonne. Le problème que je rencontre 
+est que le code est très complexe et qu’il n’y a absolument pas de documentation quand a ce que les 
+méthodes font, ce qui rends la compréhension et la navigation du code très ardue. 
