@@ -16,3 +16,17 @@ Armand:
 J'ai aujourd'hui travailler quasiment entièrement sur le problème des couleurs, le problème étant que les images sont en noir et blanc, et que Tomas nous a dit qu'il trouverais ça bien de pouvoir voir en couleur (même si cela rendrait les fonctionnalitées du programmes inutiles, car il faut que ce soit monochrome pour le tracking. Je n'ai pas réussi a mettre des couleurs mais j'ai remarqué que lors de l'affichage il y a une texture OpenGL qui est créée, et qui assure que l'image soit monochrome en plus du fait que l'image elle même est convertie en format Mono8 qui lui aussi est monochrome.
 J'ai essayer de changer les textures, ce qui permet d'avoir l'image en rouge ou jaune (mais c'est pas ça qu'on veux) et j'ai essayer de changer le format de l'image, ce qui résulte en soit un crash si la texture n'est pas bonne, soit en une image trouble où on voit a la fois en zoomé et en normal mais aussi 3 fois différentes (surement du au fait que quand on prends un format RGB8 ou Bayer8, on a 3 canals (pour les couleurs) alors qu'en Mono nous n'avons qu'un seul canal)
 Puis vers la fin de la journée j'ai passé a nouveau sur les thread et j'ai fait un timer (même si nathan l'a fait un tooooooooooooout petit peu avant moi donc ça servait a rien)
+
+## 21/05/2024
+
+J'ai fait quelques tests supplémentaires sur les changements du trigger. Lorsque j'enlève le trigger, que je change la source et que je remets à on la caméra arrive à envoyer des images. Cependant si je change la source sans enlever le trigger, la caméra ne renvoie plus d'images. On dirait qu'il arrive à changer la source et à utiliser le trigger sans élément externe si on le paramètre bien.
+
+Il est normal que le trigger software focntionne car on lancer une demande d'image avant chaque récupérations dans le code. Cependant le trigger software ne devrait pas marcher. Ce qu'il se passe c'est que le changements des paramètres se fait en boucle dans un thread même pendant la diffusion. Ce qu'il se passe c'est que l'image est récupéré pile dans le moment ou le trigger software est mis à off donc l'image est récupéré sans trigger. Je ne change plus le trigger mode lors de la configuration du trigger source.
+
+On a ensuite essayé d'ajouter les couleurs. On a répéré l'endroit dans le code où openGL crée la texture pour l'image et l'endroit où il faut lui dire quel pixel format prendre. Maintenant il nous suffit d'ajouter une valeur 0 ou 1 qu'on va pouvoir changer permettant ainsi l'affichage ou non des couleur. On va transmettre cette valeur au différentes classes affichant les images pour pouvoir changer la couleur de l'image.
+
+On n'arrive pas bien à appliquer ça car on n'arrive pas à changer la texture de l'image en cours de route. On a essayé plusieurs méthodes mais rien de concluant. En plus l'application n'est pas adapté pour utiliser des couleurs. On va donc essayer autre chose.
+
+Le but est de créer une deuxième window identique à la première mais qui elle affichera le nécessaire en couleur. J'ai donc créé cette deuxième windows en copiant le code de la première. J'arrive à l'afficher pour l'instant je n'arrive pas à afficher des images dedant. Le code est un peu brouillon donc c'est difficle d'ajouter un gros morceau comme ça donc je prèfere laisse de côté pour l'instant. J'ai eu également l'idée de créer un bouton activant un "mode couleur" mais ça impliquerait beaucoup de choses à désactiver et ce n'est pas non plus ce que je veux.
+
+Je vais essayer de faire deux windows en même temps de nouveau.
