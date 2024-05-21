@@ -30,3 +30,12 @@ On n'arrive pas bien à appliquer ça car on n'arrive pas à changer la texture 
 Le but est de créer une deuxième window identique à la première mais qui elle affichera le nécessaire en couleur. J'ai donc créé cette deuxième windows en copiant le code de la première. J'arrive à l'afficher pour l'instant je n'arrive pas à afficher des images dedant. Le code est un peu brouillon donc c'est difficle d'ajouter un gros morceau comme ça donc je prèfere laisse de côté pour l'instant. J'ai eu également l'idée de créer un bouton activant un "mode couleur" mais ça impliquerait beaucoup de choses à désactiver et ce n'est pas non plus ce que je veux.
 
 Je vais essayer de faire deux windows en même temps de nouveau.
+
+Armand:
+J'ai aidé Nathan avec les images durant la matinée, l'idée de base étant d'avor un paramètres Couleur sur les caméras qui, selon si il est toggled ou pas, change la conversion de l'image récupérée par la caméra et change la texture OpenGL appliquée a l'image afin de pouvoir affiché la caméra.
+Ceci, cependant, n'a pas marché car la texture OpenGL est créée une fois au lancement et qu'elle est utilisée et modifiée très souvent, l'idée tombe a l'eau car le process qui créé la texture la traite aussi d'innombrables fois en partant du principe que l'image est monochrome, changer la texture cause forcément un crash lors de ces traitements.
+Dans l'après midi, j'ai travaillé afin de rendre le code plus lisible, pour cela j'ai changé les Project Files du projet.
+J'ai changé les fichiers dans les champs "HEADERS" & "SOURCES" afin qu'ils trouvent des fichiers existant, avec un chemin qui se base sur le PWD au lieu du fichier courant (c'est a peu près la même chose mais comme ça on est sur que c'est cross platform).
+J'ai aussi changer les divers dossiers dans les INCLUDESPATH, en enlevant tous les dossiers qui n'existent pas, car les ajouter est strictement inutile. J'ai aussi uniformiser la mise en page des includes de Qt en utilisant la variable QTDIR qui mène directement au dossier dans lequel Qt est.
+
+J'ai aussi ajouter un warning qui s'affiche au lancement de l'application afin de prévenir l'utilisateur si des fichiers de configuration sont manquants des fichiers du projet (notamment les paramètres de default tracking point & des spincamera).
