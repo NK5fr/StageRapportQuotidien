@@ -39,3 +39,18 @@ J'ai changé les fichiers dans les champs "HEADERS" & "SOURCES" afin qu'ils trou
 J'ai aussi changer les divers dossiers dans les INCLUDESPATH, en enlevant tous les dossiers qui n'existent pas, car les ajouter est strictement inutile. J'ai aussi uniformiser la mise en page des includes de Qt en utilisant la variable QTDIR qui mène directement au dossier dans lequel Qt est.
 
 J'ai aussi ajouter un warning qui s'affiche au lancement de l'application afin de prévenir l'utilisateur si des fichiers de configuration sont manquants des fichiers du projet (notamment les paramètres de default tracking point & des spincamera).
+
+## 22/05/2024
+
+J'ai réglé le problème de fermeture des fenêtres. J'ai ajouté une vérification que la windows que l'on cherche à enlever existe bien.
+
+J'arrive donc a afficher deux fenêtre liées ensembles et à la caméra et maintenant je vais essayer d'afficher la même image dans ces deux fenêtres. Le problème est que sur la deuxième fenêtre créée pour la couleur les images ne veulent pas s'afficher. C'est pourtant une copie conforme de la permière et je n'ai même pas encore ajouté le nécessaire pour la couleur donc je ne comprends pas pourquoi ça ne marche pas.
+
+
+J'ai remarqué qu'il y avait une valeur qui n'était pas initialisée dans la deuxième window j'ai alors réussi à afficher deux windows ayant la même image en noir et blanc. J'ai ensuite ajouté une condition me permettant de choisir de récupérer une image en noir et blanc ou en couleur. Maintenant je récupère donc deux images que j'envoie aux deux windows.
+
+J'ai maintenant un bouton permetant d'activer et de désactiver le color mode. Tout ce qu'il faut pour l'instant c'est de changer une variable chargée de savoir si le mode est activé ou non. Le bouton désactive aussi tout les autres option incompatibles avec le mode couleur.
+
+Le bouton permet maintenant d'ouvrir et de fermer la bonne window selon si l'utilisateur veut voir en couleur ou non.
+
+J'ai aussi cherché la raison d'un crash, en effet lorsqu'on retire une caméra pendant qu'elle diffuse l'application crash. J'ai tenté de fermer la capture d'images mais en raison de problèmes de thread je ne peut pas l'arrêter comme ça. Je n'ai pas eu le temps de trouver l'origine du crash.
