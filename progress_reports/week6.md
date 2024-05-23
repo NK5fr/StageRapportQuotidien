@@ -60,3 +60,17 @@ Dans la matinée, je me suis renseigner sur comment faire de la documentation av
 J'ai commencé par MainWindow, et j'ai fait a peu près la moitié.
 Après notre entrevue avec Tomas Holt, j'ai récupéré le projet des élèves Français de 2016 (Projet3DOpenGL) et je l'ai fait passé sur Qt6, puis j'ai corrigé les bugs de l'application (elle ne marchait pas car le projet ne propose pas de choisir quel fichier on veux charger).
 Le projet se lance et réussi a charger un fichier, mais la démo ne marche pas, et donc je vais essayer de faire marcher cela demain.
+
+## 23/05/2024
+
+J'ai commencé la journée en essayant de comprendre pourquoi l'application crashait lorsqu'on retirait une caméra. J'ai remarqué que le problème venait du fait que je n'avais pas ajouté de vérification que la caméra était branchée avant de chenger les paramètres du trigger. Une fois cela fait je n'ai plus eu de crash. Cependant il m'est arrivé d'avoir des crash en reconnectant une caméra après l'avoir déconnectée. Cependant ce bug n'est pas apparu tout le temps donc c'est compliqué de le corriger. Pour tenter d'éviter tout problème j'ai fait en sorte qui si la caméra débranchée est celle selectionnée alors on la déselectionne.
+
+J'ai ensuite essayé de brancher une camera uniquement en noir et blanc pour voir ce que ça fait. J'ai remarqué que l'image est très sombre et j'ai rapidement compris que c'est l'exposure time qui est mit au minimum si sa valeur ne rentre pas dans la limite. J'ai changé ça pour mettre au minimum ou au maximum selon si la valeur est en dessous ou au dessus de la limite.
+
+J'ai passé une bonne partie de la journée à régler de nombreux problèmes d'affichages liés à la couleur. Après avoir tenté beaucoup de chose j'ai trouvé qu'au final la meilleure solution c'est de décocher les caméras pour complètement fermer les windows et laisser l'utilisateur recocher ce qu'il veut.
+
+J'ai ensuite regardé une application qu'on va devoir fusionner avec la notre. Cette application fonctionne aussi avec du stop motion et permet de voir le résultat total de toute les frames sous forme de vidéo.
+
+L'application est censée afficher une zone en 3D permettant de visualiser les points capturés par la caméra lors du stop motion. Cependant les créateur de l'application on précisé que la rotation de la zone 3D pour visualiser les points dans tous les angles ne marchait pas. J'ai donc essayé de comprendre la rotation avec openGL et j'ai réussi à manipuler un peu les variables pour changer la rotation et j'ai rapidement compris que c'est l'axe y qui a un problème. Je pense qu'ils se sont trompé dans un nom de fonction et qu'ils ont appelé x() au lieu de y(). 
+
+Après correction la rotation marchait beaucoup mieux malgrès qu'elle soit encore imparfaite.  
