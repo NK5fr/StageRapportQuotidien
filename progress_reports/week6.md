@@ -54,3 +54,9 @@ J'ai maintenant un bouton permetant d'activer et de désactiver le color mode. T
 Le bouton permet maintenant d'ouvrir et de fermer la bonne window selon si l'utilisateur veut voir en couleur ou non.
 
 J'ai aussi cherché la raison d'un crash, en effet lorsqu'on retire une caméra pendant qu'elle diffuse l'application crash. J'ai tenté de fermer la capture d'images mais en raison de problèmes de thread je ne peut pas l'arrêter comme ça. Je n'ai pas eu le temps de trouver l'origine du crash.
+
+Armand:
+Dans la matinée, je me suis renseigner sur comment faire de la documentation avec Qt, et j'ai commencé a faire de la documentation qu'on pourra généré afin de rendre la compréhension du code plus simple.
+J'ai commencé par MainWindow, et j'ai fait a peu près la moitié.
+Après notre entrevue avec Tomas Holt, j'ai récupéré le projet des élèves Français de 2016 (Projet3DOpenGL) et je l'ai fait passé sur Qt6, puis j'ai corrigé les bugs de l'application (elle ne marchait pas car le projet ne propose pas de choisir quel fichier on veux charger).
+Le projet se lance et réussi a charger un fichier, mais la démo ne marche pas, et donc je vais essayer de faire marcher cela demain.
