@@ -94,3 +94,9 @@ Je vais plutôt regarder le problème d'affichage des images dans un widget sur 
 Il y a beaucoup de windows imbriquées les unes dans les autres donc je dois trouver quelle window pose problème. Je n'arrive pas à trouver la window contenant exactement l'image, la possibilité la plus probable est que tout le placement est géré automatiquement pas opengl et dans ce cas là il va être compliqué de changer quoi que ce soit. En plus je ne veux pas que ça change l'affichage sur linux donc il faut faire attention à ce que je modifie.
 
 J'ai remarqué qu'en changeant les valeurs dans la fonction glViewport je pouvais déplacer cette zone d'affichage mais bien entendu ça déplace aussi sur linux donc ça n'est pas une solution valable.
+
+Armand:
+
+Aujourd'hui j'ai ajouté un sol au widget fait par les etudiants de 2016,
+J'ai ajouté un moyen de lancer TrackPoint depuis l'application dans le file wizard.
+On peux changer l'executable qu'on veux lancer, voir l'executable actuellement choisi.
