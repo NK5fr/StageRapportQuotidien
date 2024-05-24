@@ -94,3 +94,5 @@ Je vais plutôt regarder le problème d'affichage des images dans un widget sur 
 Il y a beaucoup de windows imbriquées les unes dans les autres donc je dois trouver quelle window pose problème. Je n'arrive pas à trouver la window contenant exactement l'image, la possibilité la plus probable est que tout le placement est géré automatiquement pas opengl et dans ce cas là il va être compliqué de changer quoi que ce soit. En plus je ne veux pas que ça change l'affichage sur linux donc il faut faire attention à ce que je modifie.
 
 J'ai remarqué qu'en changeant les valeurs dans la fonction glViewport je pouvais déplacer cette zone d'affichage mais bien entendu ça déplace aussi sur linux donc ça n'est pas une solution valable.
+
+Je me suis rendu compte que lorsqu'on change le color mode seul le bouton est décoché mais que la diffusion continue. J'ai corrigé ça en demandant l'arrête de la diffucion en plus du décochage du bouton. 
