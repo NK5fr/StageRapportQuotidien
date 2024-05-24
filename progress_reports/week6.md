@@ -96,3 +96,9 @@ Il y a beaucoup de windows imbriquées les unes dans les autres donc je dois tro
 J'ai remarqué qu'en changeant les valeurs dans la fonction glViewport je pouvais déplacer cette zone d'affichage mais bien entendu ça déplace aussi sur linux donc ça n'est pas une solution valable.
 
 Je me suis rendu compte que lorsqu'on change le color mode seul le bouton est décoché mais que la diffusion continue. J'ai corrigé ça en demandant l'arrête de la diffucion en plus du décochage du bouton. 
+
+Armand:
+
+Aujourd'hui j'ai ajouté un sol au widget fait par les etudiants de 2016,
+J'ai ajouté un moyen de lancer TrackPoint depuis l'application dans le file wizard.
+On peux changer l'executable qu'on veux lancer, voir l'executable actuellement choisi.
