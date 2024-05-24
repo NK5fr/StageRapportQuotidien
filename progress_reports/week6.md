@@ -73,4 +73,11 @@ J'ai ensuite regardé une application qu'on va devoir fusionner avec la notre. C
 
 L'application est censée afficher une zone en 3D permettant de visualiser les points capturés par la caméra lors du stop motion. Cependant les créateur de l'application on précisé que la rotation de la zone 3D pour visualiser les points dans tous les angles ne marchait pas. J'ai donc essayé de comprendre la rotation avec openGL et j'ai réussi à manipuler un peu les variables pour changer la rotation et j'ai rapidement compris que c'est l'axe y qui a un problème. Je pense qu'ils se sont trompé dans un nom de fonction et qu'ils ont appelé x() au lieu de y(). 
 
-Après correction la rotation marchait beaucoup mieux malgrès qu'elle soit encore imparfaite.  
+Après correction la rotation marchait beaucoup mieux malgrès qu'elle soit encore imparfaite.
+
+Armand:
+Dans la journée, j'ai continuer a travailler sur l'intégration du widget. 
+J'ai fixé le problème sur la démo qui ne marche pas, j'ai ajouter les fichiers a notre projet principal, ajouter un bouton dans un widget pre-existant permettant donc d'ouvrir ce nouveau projet avec le fichier actuellement entrain d'être utilisé.
+Le projet en lui même est plutôt dur d'utilisation, en effet les élèves ayant fait ce projet en 2016 n'ont pas fait quelque chose de semblable sur OpenGL a ce qui est déjà en OpenGL dans CameraManager.
+Nathan a donc changé la manière de bouger la caméra,
+je m'occupe d'ajouter un sol a la vision 3d, ce qui permettra de pouvoir plus facilement se repérer dans leur environnement 3d, mais aussi me permettra de faire des choses avec OpenGL.
