@@ -73,4 +73,16 @@ J'ai ensuite regardé une application qu'on va devoir fusionner avec la notre. C
 
 L'application est censée afficher une zone en 3D permettant de visualiser les points capturés par la caméra lors du stop motion. Cependant les créateur de l'application on précisé que la rotation de la zone 3D pour visualiser les points dans tous les angles ne marchait pas. J'ai donc essayé de comprendre la rotation avec openGL et j'ai réussi à manipuler un peu les variables pour changer la rotation et j'ai rapidement compris que c'est l'axe y qui a un problème. Je pense qu'ils se sont trompé dans un nom de fonction et qu'ils ont appelé x() au lieu de y(). 
 
-Après correction la rotation marchait beaucoup mieux malgrès qu'elle soit encore imparfaite.  
+Après correction la rotation marchait beaucoup mieux malgrès qu'elle soit encore imparfaite. 
+
+## 24/05/2024
+
+J'ai commencé la journée en me renseignant sur la rotation de la zone 3D. Le problème est que pour basculer la zone en haut et en bas le code calcul la rotation seulement en fonction de l'axe y. Cela fait que on peut seulement aller en haut et en bas mais pas part rapport à l'axe x. J'ai fait certaines recherches mais ça prends du temps car il faut comprendre et visualiser les rotations.
+
+La rotation actuelle est acceptable et notre objectif de base est d'ajouter cette application à la notre et non pas de la changer. Donc pour l'instant je vais laisser comme c'est là et sauf inditcation de Tomas Holt je n'y toucherais plus.
+
+Je vais plutôt regarder le problème d'affichage des images dans un widget sur windows en effet sur windows les images ne sont pas affichées correctement et ça provoque des erreurs lorsqu'on clique sur l'image. Il est difficile de savoir d'où vient l'erreur lorsqu'on la retrouve sur windows mais pas sur linux. Cela peut vouloir dire que les comportement des 2 os est différent et il va falloir faire des tests pour trouver à quel niveau.
+
+Il y a beaucoup de windows imbriquées les unes dans les autres donc je dois trouver quelle window pose problème. Je n'arrive pas à trouver la window contenant exactement l'image, la possibilité la plus probable est que tout le placement est géré automatiquement pas opengl et dans ce cas là il va être compliqué de changer quoi que ce soit. En plus je ne veux pas que ça change l'affichage sur linux donc il faut faire attention à ce que je modifie.
+
+J'ai remarqué qu'en changeant les valeurs dans la fonction glViewport je pouvais déplacer cette zone d'affichage mais bien entendu ça déplace aussi sur linux donc ça n'est pas une solution valable.
