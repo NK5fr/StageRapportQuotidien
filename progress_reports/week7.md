@@ -17,3 +17,25 @@ Durant une partie de la journée il y a eu des présentations sur d'autres proje
 Après les présentations qui ont durée plusieurs heures nous avons eu un meeting qui a lui duré un peu plus d'une heure. On a présenté les avancées, nos remarques et nos questions. Nous avons surtout discuté des problèmes qui restent à résoudre. Les principaux problèmes sont les problèmes d'affichage des images sur windows et la sous application qui marche à moitié et qui pourrait être grandement améliorée.
 
 Nous avons commencé à regarder comment résoudre les problèmes mais nous n'avons pas eu le temps et on a fini pour s'entrainer pour l'oral.
+
+## 29/05/2024
+
+Pour commencer la journée j'ai continué de regarder ce problème d'affichage d'une image dans une window. D'après mes observations il semblerait qu'en fait une window de même dimension sur linux et window n'est en réalité pas de la même dimension en pixel. Je n'ai aucune idée d'où peut venir le problème et il semblerait que ça touche beaucoup de windows.
+
+Pour tenter de trouver la source de ce problème j'ai lancé l'application sur divers pc et divers os et la taille n'est jamais pareil. Cependant si la taille bouge tout le temps pour la taille de l'image elle ne change pas ?
+
+J'ai tenté de lancer l'application sur un pc du labo sur windows mais l'application crash au lancement de la caméra. J'ai résolu ça en installant la dernière version de Spinnaker sur le pc. Cependant j'ai un autre bug qui est apparu et qui se déclenche lorsqu'on fermer l'application. Après de longue recherchent je me suis rendu compte que lorsqu'on désactive ferme la window pendant la capture et l'envoie d'une image l'application crash. Pourtant on fait des vérification à l'envoie des images mais ça ne semble pas suffisant donc je vais rajouter encore une vérification.
+
+Je suis reparti sur les problèmes de window, premièrement je vérifie la résolution de chaque pc :
+
+- Mon pc : QSize(1536, 864)
+- Pc Windows du labo : QSize(2560, 1440)
+- Pc Linux du labo : QSize(3840, 2160)
+- Pc d'Armand : QSize(1536, 864)
+
+La taille des windows changent selon la résolution cependant la taille de l'image reste la même. Cela provoque un décalage dans l'affichage qui n'est plus correct.
+
+Ce qu'il semble se passer c'est que lorsque qu'on appelle glViewport pour dimensionner la zone d'openGL, la résolution de l'écran n'est pas prise en compte et le viewport prend des dimensions qui ne sont pas en accord avec l'écran.
+
+Il est bien sûr possible d'ajuster la taille du viewport manuellement mais ça ne sert à rien puisque tous les autres écrans seront éronné. Il faudrait donc trouver une solution pour que le viewport prenne en compte la résolution de l'écran.
+J'ai fait quelques recherches sur certaine fonction d'openGL à propos du redimensionnement mais je n'ai rien trouvé de plus de ce que je sais déjà.
