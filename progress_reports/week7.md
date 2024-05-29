@@ -39,3 +39,5 @@ Ce qu'il semble se passer c'est que lorsque qu'on appelle glViewport pour dimens
 
 Il est bien sûr possible d'ajuster la taille du viewport manuellement mais ça ne sert à rien puisque tous les autres écrans seront éronné. Il faudrait donc trouver une solution pour que le viewport prenne en compte la résolution de l'écran.
 J'ai fait quelques recherches sur certaine fonction d'openGL à propos du redimensionnement mais je n'ai rien trouvé de plus de ce que je sais déjà.
+
+J'ai fini la journée par un long entrainement pour l'oral.
