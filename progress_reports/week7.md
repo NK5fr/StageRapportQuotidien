@@ -41,3 +41,11 @@ Il est bien sûr possible d'ajuster la taille du viewport manuellement mais ça 
 J'ai fait quelques recherches sur certaine fonction d'openGL à propos du redimensionnement mais je n'ai rien trouvé de plus de ce que je sais déjà.
 
 J'ai fini la journée par un long entrainement pour l'oral.
+
+Armand:
+
+Travaille sur pouvoir selectioner une zone avec la souris, pour selectionner les markers de cette manière.
+Pour le moment je peux faire un point a l'origine du clique et un point a l'endroit courant. Le problème est que visuellement elles sont alignées mais le problème rencontré est que ils ne sont pas vraiment alignés, leur coordonnée Z n'est pas la même et donc en essayant de faire un carré allant d'un point a l'autre, ça ne marche pas.
+Il faudrait transposé un point sur le Z de l'autre, chose qui est faisable normalement.
+Ensuite il faudra réussir a transporté ce carré d'un extrème a l'autre de la matrice, ce qui va permettre de choisir les markeurs selon la selection.
+Une fois cela fait, il faudrat simplement lister tous les markers et permettre de les selectionner on click sur les labels, histoire de rendre tous mieux
