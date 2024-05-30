@@ -49,3 +49,17 @@ Pour le moment je peux faire un point a l'origine du clique et un point a l'endr
 Il faudrait transposé un point sur le Z de l'autre, chose qui est faisable normalement.
 Ensuite il faudra réussir a transporté ce carré d'un extrème a l'autre de la matrice, ce qui va permettre de choisir les markeurs selon la selection.
 Une fois cela fait, il faudrat simplement lister tous les markers et permettre de les selectionner on click sur les labels, histoire de rendre tous mieux
+
+## 30/05/2024
+
+Aujourd'hui j'ai continué à chercher comment ajuster la taille des du viewport en fonction de la résolution. J'ai fait quelques tests mais rien de concluant. J'ai finalement trouvé quelqu'un parlant d'un device pixel ratio. J'ai multiplié la taille de la window par le device pixel ratio et ça a fonctionné. Tous les endroits où l'image n'était pas affichée correctement sont maintenant corrigés. Cependant ça n'a pas fonctionné sur la sub application qui a également des problèmes sur l'affichage des images.
+
+Le device pixel ratio est une valeur qui permet de savoir combien de pixel de l'écran correspond à un pixel de la window. En mutipliant la taille du viewport par cette valuer nous obtenons la taille de la window effective sur l'écran.
+
+J'ai ensuite modifié mon diapo pour l'oral pour retirer le bug d'affichage de la partie erreurs restantes. J'ai ajouté la correction de l'erreur à la partie faire marcher l'application sur windows.
+
+J'ai ensuité travaillé sur la sub application. J'ai repéré l'endroit où les calculs de pixels sont fait et j'ai multiplié les valeurs par le device pixel ratio. Cela a corrigé le problème et nous n'avons plus eu de décalage dans l'affichage.
+
+J'ai continué la journée en travaillant sur mon rapport de stage. J'ai préparé un plan il y a quelques semaine mais je trouve qu'il ne met pas assez en valeur la mission. J'ai alors changé le plan et j'ai noté des idées sur ce quoi dire pour chaque parties.
+
+Je fini par un entrainement pour mon oral comme d'habitude.
