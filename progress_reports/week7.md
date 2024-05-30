@@ -63,3 +63,8 @@ J'ai ensuité travaillé sur la sub application. J'ai repéré l'endroit où les
 J'ai continué la journée en travaillant sur mon rapport de stage. J'ai préparé un plan il y a quelques semaine mais je trouve qu'il ne met pas assez en valeur la mission. J'ai alors changé le plan et j'ai noté des idées sur ce quoi dire pour chaque parties.
 
 Je fini par un entrainement pour mon oral comme d'habitude.
+
+Armand:
+Encore plus de travail sur la selection, j'ai reussi au bout d'un moment a faire une selection qui fait un carré entre le point d'arrivé et d'entré, mais il n'est absoluement pas centré sur la vue de la caméra et regarde toujours le même sens.
+J'ai fait des recherches sur comment changé ça mais tous le code que j'ai trouvé ou essayer de faire n'a absolument pas marché.
+Je reprendrais demain ou alors j'essayerais de refaire la rotation de l'écran demain. ce dernier pourrait s'averrer plus simple maintenant que nous avons le pouvoir de GLU.
