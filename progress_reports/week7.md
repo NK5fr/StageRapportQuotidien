@@ -68,3 +68,19 @@ Armand:
 Encore plus de travail sur la selection, j'ai reussi au bout d'un moment a faire une selection qui fait un carré entre le point d'arrivé et d'entré, mais il n'est absoluement pas centré sur la vue de la caméra et regarde toujours le même sens.
 J'ai fait des recherches sur comment changé ça mais tous le code que j'ai trouvé ou essayer de faire n'a absolument pas marché.
 Je reprendrais demain ou alors j'essayerais de refaire la rotation de l'écran demain. ce dernier pourrait s'averrer plus simple maintenant que nous avons le pouvoir de GLU.
+
+## 31/05/2024
+
+Pour commencer la journée j'ai fait le tour de l'application pour repérer des bugs. J'ai répéré une erreur venant du fait que certaines options spécifique aux images noires et blanches restent actives lorsqu'on change le colorMode. J'ai docn fait en sorte de désactiver toutes ces options au changement du color mode.
+
+J'ai ensuite ajouté une petite option à l'activation du crosshair faisant en sorte que le curseur soit affiché avec un croix qui le suit. J'ai fait le dessin des lignes avec OpenGL et j'ai fait en sorte que cela s'active et se désactive avec le crosshair.
+
+J'ai ensuite travaillé un peu sur l'introduction et la conclusion de mon rapport de stage. J'ai juste écrit quelques notes de ce que je vais dire. J'ai également travaillé sur la conclusion de mon oral car je n'avais encore fait sur mon diapo dans la partie conclusion.
+
+J'ai ensuite fait des recherches sur la rotation de la sous application. J'ai cherché un moyen de la rendre meilleure avec ce qu'on a déjà. Je n'ai pas trouvé de solution. J'ai égelement tenté de copier la rotation de CameraManager mais en vain.
+
+J'ai ensuite fait des recherches sur la sélection des marqueurs. J'ai essayé de comprendre comment le code s'y prend pour les sélectionner et pourquoi ça marche pas. Je n'arrive pas vraiment à savoir si c'est la souris qui n'est pas repéré au bon endroit ou si c'est autre chose. Etant donné que nous n'avons pas accès au pc Linux il est compliqué de comparer quoi que ce soit.
+
+J'ai ensuite investigué le MenuBar pour voir ce qui fonctionne. J'ai vu qu'on pouvait lancer un exécutable depuis celui ci. J'ai vu aussi que beaucoup de fonctions ne sont pas implémentées alors qu'elles devraient l'être. Un écouteur d'événement est bien implémenté mais il n'est jamais appelé pourtant tout est bien implémenté.
+
+Je fini la journée par un entrainement pour l'oral.
