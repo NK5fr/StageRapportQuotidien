@@ -84,3 +84,13 @@ J'ai ensuite fait des recherches sur la sélection des marqueurs. J'ai essayé d
 J'ai ensuite investigué le MenuBar pour voir ce qui fonctionne. J'ai vu qu'on pouvait lancer un exécutable depuis celui ci. J'ai vu aussi que beaucoup de fonctions ne sont pas implémentées alors qu'elles devraient l'être. Un écouteur d'événement est bien implémenté mais il n'est jamais appelé pourtant tout est bien implémenté.
 
 Je fini la journée par un entrainement pour l'oral.
+
+Armand:
+
+Aujourd'hui j'ai décidé de me coller a la caméra, car je me suis dit qu'après avoir fait des recherches sur OpenGL hier, je pourrais essayer de résoudre ce problème en recommencant de 0.
+J'ai passé la journée a faire différents tests et j'ai atteins a un moment un résulat plutôt similaire ce que nous attendions, mais c'étais encore trop chaotique, et j'ai donc revert mes changements.
+Mon problème étant qu'il faut qu'on puisse régler le "pitch" et le "yaw" de la caméra, donc l'orientation X et Z, mais pas le "roll", soit le Y.
+Comme ça, nous ne pouvons pas "bouger le sol". On peut regarder de haut en bas et on peut tourner de gauche a droite, mais on ne penche pas la caméra.
+
+Durant l'après midi, je suis passé sur une moyen plus simple de selectionner les markeurs, via une liste dans l'onglet "tab".
+J'ai presque fini cela, il faut encore que je puisse choisir si on veux séléctionner ou lié des markeurs entre eux.
