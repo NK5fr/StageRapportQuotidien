@@ -9,3 +9,8 @@ J'ai ensuite regardé les problèmes du MenuBar. Comme j'ai pu le voir la semain
 J'ai ensuite changé certaines action dans le MenuBar qui en marchait pas bien et j'ai aussi modifié l'option de real crosshair pour qu'il affiche ou non les coordonnées du curseur. J'ai également ajouté une action close project au MenuBar car il n'y en avait pas.
 
 J'ai ensuite fait un tour de mon diapo pour changer les éléments qui ne sont plus d'actualité et j'ai changé quelques passages trop longs.
+
+Armand:
+J'ai fini de faire le menu permettant de voir tous les markeurs, depuis ici on peux voir la position exacte de chaque markeur.
+Pour cela on a un menu additionel dans la partie inférieure de l'application.
+Il faudrait maintenant aussi permettre de lier les markeurs depuis ce menu, et aussi les swap entre eux. Il faut encore voir comment faire.
