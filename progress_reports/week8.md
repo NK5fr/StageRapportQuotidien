@@ -10,6 +10,8 @@ J'ai ensuite changé certaines action dans le MenuBar qui en marchait pas bien e
 
 J'ai ensuite fait un tour de mon diapo pour changer les éléments qui ne sont plus d'actualité et j'ai changé quelques passages trop longs.
 
+Pour finir la journée j'ai fais la partie expérience Erasmus de mon rapport de stage et je me suis entrainé à la présentation orale.
+
 Armand:
 J'ai fini de faire le menu permettant de voir tous les markeurs, depuis ici on peux voir la position exacte de chaque markeur.
 Pour cela on a un menu additionel dans la partie inférieure de l'application.
