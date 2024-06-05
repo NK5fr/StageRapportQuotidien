@@ -26,3 +26,9 @@ J'ai ensuite regardé pour corriger quelques erreurs de CameraManager. J'ai d'ab
 J'ai eu aussi un problème à la fermeture de l'application car certain widget ne se ferment pas à temps, cependant il est difficile de trouver de quel widget il s'agit donc je n'ai pas fini.
 
 J'ai fini par faire une lecture de mon rapport pour reformuler certaines phrases.  
+
+Armand:
+
+Fin de l'implémentation de la liste des markeurs dans SwappingCorrector, ajout de cela dans la vraie application.
+Fix des problèmes de selection (liste pas synchro et donc il y avait des bugs).
+Travail sur mes slides & sur mon rapport
