@@ -32,3 +32,13 @@ Armand:
 Fin de l'implémentation de la liste des markeurs dans SwappingCorrector, ajout de cela dans la vraie application.
 Fix des problèmes de selection (liste pas synchro et donc il y avait des bugs).
 Travail sur mes slides & sur mon rapport
+
+## 05/06/2024
+
+Pour aujourd'hui j'ai décidé de concentrer toute la matinée sur la soutenance. Il y a beaucoup de passages ou j'hésite et o je suis incertain et il faut que je corrige ça pour la soutenance. Il faut que je m'entraine et que je corrige les parties trop longues. 
+
+Finalement comme on a déjà fait beaucoup de travail sur CameraManager j'ai décidé de travailler mon rapport le reste de la journée.
+
+J'ai aussi un peu travaillé sur le problème d'hier. L'erreur venait du fait que la sous application n'értait pas bien supprimée. J'ai aussi résolé un problème de connect qui n'existe plus dans Qt6 je l'ai donc remplacé.
+
+J'ai fini la journée par un entrainement oral.
