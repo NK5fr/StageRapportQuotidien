@@ -35,10 +35,21 @@ Travail sur mes slides & sur mon rapport
 
 ## 05/06/2024
 
-Pour aujourd'hui j'ai décidé de concentrer toute la matinée sur la soutenance. Il y a beaucoup de passages ou j'hésite et o je suis incertain et il faut que je corrige ça pour la soutenance. Il faut que je m'entraine et que je corrige les parties trop longues. 
+Pour aujourd'hui j'ai décidé de concentrer toute la matinée sur la soutenance. Il y a beaucoup de passages ou j'hésite et ou je suis incertain et il faut que je corrige ça pour la soutenance. Il faut que je m'entraine et que je corrige les parties trop longues. 
 
 Finalement comme on a déjà fait beaucoup de travail sur CameraManager j'ai décidé de travailler mon rapport le reste de la journée.
 
 J'ai aussi un peu travaillé sur le problème d'hier. L'erreur venait du fait que la sous application n'értait pas bien supprimée. J'ai aussi résolé un problème de connect qui n'existe plus dans Qt6 je l'ai donc remplacé.
+
+J'ai fini la journée par un entrainement oral.
+
+## 06/06/2024
+
+Suite à des indications qu'on a reçu par mail de la part de Tomas Holt, nous allons devoir faire une documentation sur ce qu'on a fait dans le project. On va devoir fait une description du projet mais on va surtout devoir faire une description de ce qu'on a fait. Globalement ce rendu doit permettre à quelqu'un de faire le même travail que nous.
+
+J'ai donc fait un résumé de tout ce qu'on a fait au projet grâce aux rapport quotidients. On devrait pouvoir faire le rapport à partir de ça.
+J'ai également fait un code couleur pour séparer ce qu'on a fait en différentes parties.
+
+Pendant le reste de la journée on a écrit le début de ce rapport en épliquant le fonctionnement de l'application et on a fait aussi le début des parties "how to upgrade Qt" et "required libraries and software".  
 
 J'ai fini la journée par un entrainement oral.
