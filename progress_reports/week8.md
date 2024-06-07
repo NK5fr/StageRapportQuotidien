@@ -59,3 +59,5 @@ J'ai fini la journée par un entrainement oral.
 Aujourd'hui j'ai continué à travailler sur le rapport avec Armand. Nous avons fini les parties "how to upgrade Qt", "required libraries and software", "how to upgrade Spinnaker", "How to run CameraManager on Windows" et "Other changes". Cela nous a pris une bonne partie de la journée.
 
 J'ai également corrigé un bug lié au faut que lorsqu'une camera est deconnectée elle n'est pas bien déselectionnée. J'ai donc ajouté un appel à la fonction item click pour simuler un click sur un autre item de la liste. Cela a l'air de marcher.
+
+j'ai fini la journée par un entrainement oral.
