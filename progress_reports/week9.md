@@ -11,3 +11,7 @@ En rédigeant je me suis rendu compte que récupérer deux images (une noir et b
 Je n'ai pas fini la rédaction du rapport pour Tomas Holt donc je continuerai demain.
 
 On a fini la journée par nous entrainer à la soutenance.
+
+Armand:
+J'ai essayer différents moyen de changer mes additions a SwappingCorrector, mais ça ne semblait pas marcher ou être plus optimiser.
+J'ai continuer a modifier mes slides et a travailler sur le rapport a rendre a Tomas, en ajouter les nouvelles features que j'ai fait ainsi qu'un autre changements que Nathan avait fait avec la Toolbar
