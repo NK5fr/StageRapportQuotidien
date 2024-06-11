@@ -11,3 +11,14 @@ En rédigeant je me suis rendu compte que récupérer deux images (une noir et b
 Je n'ai pas fini la rédaction du rapport pour Tomas Holt donc je continuerai demain.
 
 On a fini la journée par nous entrainer à la soutenance.
+
+## 11/06/2024
+
+Ajourd'hui j'ai continué à travailler sur le rapport pour Tomas Holt. J'ai fini la partie sur le crosshair et le real crosshair. Après ça avec Armand on a corrigé tout ce que j'ai fait dans la partie "features to add". Il a corrigé les fautes d'anglais et on a changer quelques explications pour les rendre plus claires et moins techniques.
+
+On a aussi corrigé sa partie du rapport. On a relu les phrases et ajouté des captures d'écrans et des shémas pour appuyer les explications.
+Finalement on a fait une relecture pour vérifier que tout est bien expliqué et on a changé la mise en page.
+
+Ensuite je me suis entrainer sur ma soutenance. Il y a quelques passages où j'hésite trop, où je suis pas assez clair et où je prends trop de temps il faut que je corrige ça.
+
+J'ai fini la journée avec une présentation oral.
