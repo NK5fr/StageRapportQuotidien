@@ -12,6 +12,11 @@ Je n'ai pas fini la rédaction du rapport pour Tomas Holt donc je continuerai de
 
 On a fini la journée par nous entrainer à la soutenance.
 
+Armand:
+J'ai essayer différents moyen de changer mes additions a SwappingCorrector, mais ça ne semblait pas marcher ou être plus optimiser.
+J'ai continuer a modifier mes slides et a travailler sur le rapport a rendre a Tomas, en ajouter les nouvelles features que j'ai fait ainsi qu'un autre changements que Nathan avait fait avec la Toolbar
+
+
 ## 11/06/2024
 
 Ajourd'hui j'ai continué à travailler sur le rapport pour Tomas Holt. J'ai fini la partie sur le crosshair et le real crosshair. Après ça avec Armand on a corrigé tout ce que j'ai fait dans la partie "features to add". Il a corrigé les fautes d'anglais et on a changer quelques explications pour les rendre plus claires et moins techniques.
