@@ -28,6 +28,11 @@ Ensuite je me suis entrainer sur ma soutenance. Il y a quelques passages où j'h
 
 J'ai fini la journée avec une présentation oral.
 
+Armand:
+
+Aujourd'hui nous avons fini notre rapport pour Tomas Holt, en finissant les new features ainsi que en relisant notre rapport en entier. J'ai aussi fait des derniers changements sur mes slides pour la présentation, en ajoutant une solution envisagé pour résoudre les problèmes de SwappingCorrector.
+
+
 ## 12/06/2024
 
 Aujourd'hui j'ai travaillé sur ma soutenance. Je passe demain et j'aimerais passer la journée à retravailler les passages compliqués. Les passages avec des explications techniques me prennent plus de temps et il faut que j'optimise ça pour rester environ dans les 20 minutes de présentation.
