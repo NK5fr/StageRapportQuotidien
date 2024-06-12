@@ -27,3 +27,7 @@ Finalement on a fait une relecture pour vérifier que tout est bien expliqué et
 Ensuite je me suis entrainer sur ma soutenance. Il y a quelques passages où j'hésite trop, où je suis pas assez clair et où je prends trop de temps il faut que je corrige ça.
 
 J'ai fini la journée avec une présentation oral.
+
+Armand:
+
+Aujourd'hui nous avons fini notre rapport pour Tomas Holt, en finissant les new features ainsi que en relisant notre rapport en entier. J'ai aussi fait des derniers changements sur mes slides pour la présentation, en ajoutant une solution envisagé pour résoudre les problèmes de SwappingCorrector.
