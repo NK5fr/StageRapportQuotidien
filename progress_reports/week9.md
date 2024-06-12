@@ -27,3 +27,15 @@ Finalement on a fait une relecture pour vérifier que tout est bien expliqué et
 Ensuite je me suis entrainer sur ma soutenance. Il y a quelques passages où j'hésite trop, où je suis pas assez clair et où je prends trop de temps il faut que je corrige ça.
 
 J'ai fini la journée avec une présentation oral.
+
+## 12/06/2024
+
+Aujourd'hui j'ai travaillé sur ma soutenance. Je passe demain et j'aimerais passer la journée à retravailler les passages compliqués. Les passages avec des explications techniques me prennent plus de temps et il faut que j'optimise ça pour rester environ dans les 20 minutes de présentation.
+
+J'ai fait une présentation de mon oral à Armand et il m'a fait une présentation du sien.
+
+J'ai ensuite travaillé sur mon rapport de stage. J'ai changé le plan du developement pour plus appuyer sur la mission mais je n'ai pas modifié l'introduction. J'ai donc changé l'annonce du plan dans l'introduction pour qu'elle corresponde au nouveau plan.
+
+J'ai changé quelques explication sur l'utilité de Qt dans CameraManager et j'ai changé l'intro pour avoir une meilleure description de notre mission.
+
+J'ai fini la journée en travaillant sur mon oral.
