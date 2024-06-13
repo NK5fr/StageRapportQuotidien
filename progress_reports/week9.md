@@ -44,3 +44,11 @@ J'ai ensuite travaillé sur mon rapport de stage. J'ai changé le plan du develo
 J'ai changé quelques explication sur l'utilité de Qt dans CameraManager et j'ai changé l'intro pour avoir une meilleure description de notre mission.
 
 J'ai fini la journée en travaillant sur mon oral.
+
+## 13/06/2024
+
+Pour le debut de cette matinée j'ai travailler la soutenance que je dois passer à 11h. Après un peu de préparation j'ai fait un entrainement avec Armand et il m'a aussi fait sa présentation. Après ça on est allé dans la salle de réunion et on a passé nos soutenances.
+
+Après ça on a fait une présentation de ce qu'on a fait à Tomas Holt et on a discuté de ce qu'on va faire pour la suite. Globalement on va travailler sur notre rapport de stage jusqu'au 24 juin et ensuite on va travailler sur l'application pour faire la meilleure version possible.
+
+Comme convenu, j'ai alors travaillé sur mon rapport. J'ai changé mon introduction car la présentation de la mission est trop légère donc il faut que je rajoute un peu de contenu. j'ai ensuite continué à faire le développement, j'ai fait le début du deuxième chapitre. J'ai commencé les explications sur la mise à jour de Qt. C'est à dire les différentes parties qu'il faut changer pour utiliser Qt6.
