@@ -57,4 +57,4 @@ Comme convenu, j'ai alors travaillé sur mon rapport. J'ai changé mon introduct
 
 Durant cette journée j'ai continué mon rapport. Mon objectif pour cette journée était de finir le deuxième chapitre. J'ai donc continué les explications sur la mise à jour de Qt. J'ai expliqué les changements à faire dans le code pour que l'application fonctionne avec Qt6. J'ai ensuite parlé de Spinnaker et de sa mise à jour. Les changements de lib qu'on a fait, les fonctions qu'on a changé et la suppression de FlyCapture.
 
-J'ai fini le chapitre par les explications de comment faire marcher CameraManager sur Windows. J'ai expliqué les problèmes de compilation qu'on a eu, j'ai expliqué comment on a importé l'API de windows et j'ai fini par expliquer les problèmes avec le device pixel ration.
+J'ai fini le chapitre par les explications de comment faire marcher CameraManager sur Windows. J'ai expliqué les problèmes de compilation qu'on a eu, j'ai expliqué comment on a importé l'API de windows et j'ai fini par expliquer les problèmes avec le device pixel ratio.
