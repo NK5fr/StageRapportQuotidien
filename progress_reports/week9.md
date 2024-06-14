@@ -13,7 +13,7 @@ Je n'ai pas fini la rédaction du rapport pour Tomas Holt donc je continuerai de
 On a fini la journée par nous entrainer à la soutenance.
 
 Armand:
-J'ai essayer différents moyen de changer mes additions a SwappingCorrector, mais ça ne semblait pas marcher ou être plus optimiser.
+  J'ai essayer différents moyen de changer mes additions a SwappingCorrector, mais ça ne semblait pas marcher ou être plus optimiser.
 J'ai continuer a modifier mes slides et a travailler sur le rapport a rendre a Tomas, en ajouter les nouvelles features que j'ai fait ainsi qu'un autre changements que Nathan avait fait avec la Toolbar
 
 
@@ -29,8 +29,7 @@ Ensuite je me suis entrainer sur ma soutenance. Il y a quelques passages où j'h
 J'ai fini la journée avec une présentation oral.
 
 Armand:
-
-Aujourd'hui nous avons fini notre rapport pour Tomas Holt, en finissant les new features ainsi que en relisant notre rapport en entier. J'ai aussi fait des derniers changements sur mes slides pour la présentation, en ajoutant une solution envisagé pour résoudre les problèmes de SwappingCorrector.
+  Aujourd'hui nous avons fini notre rapport pour Tomas Holt, en finissant les new features ainsi que en relisant notre rapport en entier. J'ai aussi fait des derniers changements sur mes slides pour la présentation, en ajoutant une solution envisagé pour résoudre les problèmes de SwappingCorrector.
 
 
 ## 12/06/2024
@@ -45,6 +44,9 @@ J'ai changé quelques explication sur l'utilité de Qt dans CameraManager et j'a
 
 J'ai fini la journée en travaillant sur mon oral.
 
+Armand:
+  Aujourd'hui j'ai fait les derniers changements de ma soutenance, en ajoutant une partie parlant de la solution envisagée afin de rajouté un moyen de selectionner les markers. J'ai commencé a travailler sur mon rapport aujourd'hui, en commencant en faisant les remerciements et l'abstract.
+
 ## 13/06/2024
 
 Pour le debut de cette matinée j'ai travailler la soutenance que je dois passer à 11h. Après un peu de préparation j'ai fait un entrainement avec Armand et il m'a aussi fait sa présentation. Après ça on est allé dans la salle de réunion et on a passé nos soutenances.
@@ -53,8 +55,14 @@ Après ça on a fait une présentation de ce qu'on a fait à Tomas Holt et on a 
 
 Comme convenu, j'ai alors travaillé sur mon rapport. J'ai changé mon introduction car la présentation de la mission est trop légère donc il faut que je rajoute un peu de contenu. j'ai ensuite continué à faire le développement, j'ai fait le début du deuxième chapitre. J'ai commencé les explications sur la mise à jour de Qt. C'est à dire les différentes parties qu'il faut changer pour utiliser Qt6.
 
+Armand: 
+  Dans la matinée nous avons travaillé sur notre soutenance avant de la passer pour de vrai. Ensuite, j'ai travailler sur mon rapport pendant le reste de la journée, en finissant la partie "Erasmus Experience".
+
 ## 14/06/2024
 
 Durant cette journée j'ai continué mon rapport. Mon objectif pour cette journée était de finir le deuxième chapitre. J'ai donc continué les explications sur la mise à jour de Qt. J'ai expliqué les changements à faire dans le code pour que l'application fonctionne avec Qt6. J'ai ensuite parlé de Spinnaker et de sa mise à jour. Les changements de lib qu'on a fait, les fonctions qu'on a changé et la suppression de FlyCapture.
 
 J'ai fini le chapitre par les explications de comment faire marcher CameraManager sur Windows. J'ai expliqué les problèmes de compilation qu'on a eu, j'ai expliqué comment on a importé l'API de windows et j'ai fini par expliquer les problèmes avec le device pixel ratio.
+
+Armand:
+  Aujourd'hui j'ai entièrement travaillé sur mon rapport, en faisant l'introduction, en préparant le plan et en faisant le début de la première partie.
