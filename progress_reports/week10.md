@@ -1,0 +1,9 @@
+# Week 10
+
+## 17/06/2024
+
+Aujourd'hui j'ai travaillé sur mon rapport de stage. Il me reste la fin du dernier chapitre à faire. Cette partie contient toutes les nouvelles features que l'on a implémenté dans l'application. 
+
+J'ai parlé du color mode, de Swapping Corrector, des boutons pour lancer le trackpoint et le crosshair. J'ai évoqué les problèmatiques et les solutions que l'on a trouvé pour les implémenter.
+
+J'ai commencé la correction. Je vais changer les phrases imprécises et je vais ajouter des illustrations. J'ai aussi commencé à changer la mise en page pour que le rapport soit plus agréable à lire.
