@@ -17,3 +17,7 @@ Aujourd'hui, j'ai continué la relecture de mon rapport. J'ai réussi à relire 
 
 Armand:
   Aujourdhui c'est encore rapport ; j'ai fini la partie deux de mon rapport et j'ai avancé sur la partie trois. Vu que ce matin j'ai eu une interview pour une alternance je suis arrivé au laboratoire vers 11h30 mais je suis resté plus longtemps pour rattraper ce desequilibre
+
+## 19/06/2024
+
+Aujourd'hui, j'ai continué la relecture de mon rapport. J'ai relu la conclusion, l'erasmus expérience et l'introduction. Je n'ai quasiment pas modifié l'erasmus expérience mais j'ai modifié la conclusion qui ne me paraissait pas assez bien et qui me parait toujours perfectionnable bien que je ne sache pas quoi mettre dedans surtout au niveau bilan humain et personnel. J'ai modifié entièrement la fin de l'introduction qui en disait trop sur l'application et qui faisait des répétitions inutiles de ce que je vais dire dans le premier chapitre du développement.
