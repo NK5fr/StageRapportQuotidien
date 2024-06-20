@@ -21,3 +21,7 @@ Armand:
 ## 19/06/2024
 
 Aujourd'hui, j'ai continué la relecture de mon rapport. J'ai relu la conclusion, l'erasmus expérience et l'introduction. Je n'ai quasiment pas modifié l'erasmus expérience mais j'ai modifié la conclusion qui ne me paraissait pas assez bien et qui me parait toujours perfectionnable bien que je ne sache pas quoi mettre dedans surtout au niveau bilan humain et personnel. J'ai modifié entièrement la fin de l'introduction qui en disait trop sur l'application et qui faisait des répétitions inutiles de ce que je vais dire dans le premier chapitre du développement.
+
+## 20/06/2024
+
+Aujourd'hui, j'ai continué la relecture de mon rapport. J'ai relu le résumé du rapport de stage qui m'a semblé trop long, j'ai essayé de raccourcir un peu mais c'est tout de même trop long. Je vais peut être un peu trop dans les details mais je ne sais pas à quel point je doit être précis. J'ai ensuite relu tout le développement pour corriger certaines tournures de phrases et noter tous les mots à mettre dans le glossaire.
