@@ -29,6 +29,10 @@ Armand: Aujourd'hui c'étais encore rapport ; J'ai avancé sur la partie trois m
 
 Aujourd'hui, j'ai continué la relecture de mon rapport. J'ai relu le résumé du rapport de stage qui m'a semblé trop long, j'ai essayé de raccourcir un peu mais c'est tout de même trop long. Je vais peut être un peu trop dans les details mais je ne sais pas à quel point je doit être précis. J'ai ensuite relu tout le développement pour corriger certaines tournures de phrases et noter tous les mots à mettre dans le glossaire.
 
+Armand:
+Fin du rapport aujourd'hui, j'ai commencer a retravailler le code de la tab que j'ai ajoutée dans SwappingCorrector afin qu'elle utilise un QGridLayout et non des layout imbriqués
+
+
 ## 21/06/2024
 
 Aujourd'hui, j'ai fait mon glossaire, j'ai décris tous les mots ajouté hier. J'en ai enlevé certains qui ne sont pas propre au vocabulaire de l'application mais plutôt au vocabulaire de la programmation. Par la suite j'ai relu le rapport d'armand et j'ai ajouté des commentaires sur ce qu'il peut changer. Il a fait la même chose pour mon rapport. Pour finir la journée j'ai alors relu tout mon rapport avec les commentaires d'Armand et j'ai changer les parties qu'il trouvait améliorable.
