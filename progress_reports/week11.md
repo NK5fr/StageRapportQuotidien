@@ -7,3 +7,9 @@ Aujourd'hui, j'ai travaillé sur mon rapport de stage car il est à rendre avant
 J'ai ensuite refait une relecture complète de mon rapport de stage en corrigeant les petits détails qui ne vont pas.
 
 Pour finir la journée j'ai travaillé sur l'application, j'ai regardé pour avoir un moyen d'avoir juste certains fichiés affiché dans le file explorer de l'application. Malheureusement je n'ai pas trouvé de solution qui répond à ce problème pour le moment.
+
+Armand:
+
+Relecture de rapport vite fait correction aussi d'erreurs d'anglais
+
+Travail sur le projet, fin de refactor de comment on s'occupe de la nouvelle tab (bien plus opti) + ajout fonctions en prévision d'ajout de fonctionnalitées dans cette même tab (pour swap et link)
