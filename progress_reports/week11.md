@@ -13,3 +13,13 @@ Armand:
 Relecture de rapport vite fait correction aussi d'erreurs d'anglais
 
 Travail sur le projet, fin de refactor de comment on s'occupe de la nouvelle tab (bien plus opti) + ajout fonctions en prévision d'ajout de fonctionnalitées dans cette même tab (pour swap et link)
+
+## 25/06/2024
+
+Aujourd'hui, j'ai travaillé sur l'application, j'ai décidé de ne pas trvailler sur ce que je faisait hier mais plutôt sur une autre idée que j'ai eu. Il n'était pas possible de directement charger le dernier project ouvert dans l'application. Grâce à un fichiers je veux ajouter une action permettant de charger le dernier projet ouvert directement sans ouvrir la recherche dans le file explorer.
+
+Pour faire ça j'ai ajouté deux fonctions, une pour charger le nom du dernier project depuis un fichier et une autre pour le sauvegarder dans ce même fichier. Ces fonctions sont appelées dès que l'utilisateur veut charger le dernier projet et dès qu'il en ouvre un autre.
+
+J'ai pas eu de problème et tout a marché correctement du premier coup donc je suis allé travailler sur le system documentation du project où on note tout ce qu'on a ajouté afin de mettre un tutoriel de comment mettre en place la nouvelle feature last project dans l'application.
+
+Ensuite, j'ai travaillé sur le MenuBar de l'application, en effet celui ci est écouté mais les racourcis clavier ne sont pas encore implémentés. J'ai donc ajouté un écouteur d'évenement qui va écouter quand l'utilisateur va presser ctrl + quelque chose. Cet écouteur marche pas car on dirais que l'action est déjà prise en compte ailleur mais qu'elle ne fait rien. Il faudrait écouter chaque action individuellement pour régler ça.
