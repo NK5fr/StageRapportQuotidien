@@ -23,3 +23,13 @@ Pour faire ça j'ai ajouté deux fonctions, une pour charger le nom du dernier p
 J'ai pas eu de problème et tout a marché correctement du premier coup donc je suis allé travailler sur le system documentation du project où on note tout ce qu'on a ajouté afin de mettre un tutoriel de comment mettre en place la nouvelle feature last project dans l'application.
 
 Ensuite, j'ai travaillé sur le MenuBar de l'application, en effet celui ci est écouté mais les racourcis clavier ne sont pas encore implémentés. J'ai donc ajouté un écouteur d'évenement qui va écouter quand l'utilisateur va presser ctrl + quelque chose. Cet écouteur marche pas car on dirais que l'action est déjà prise en compte ailleur mais qu'elle ne fait rien. Il faudrait écouter chaque action individuellement pour régler ça.
+
+## 26/06/2024
+
+Aujourd'hui, j'ai travaillé sur l'application, j'ai continué ce que je faisais la veille, c'est à dire gérer correctement les raccourcis clavier. J'ai trouvé une solution qui est d'ajouter un signal au MenuBar qui sera emit à chaque fois qu'une action va être effectuée individuellement. De cette manière seul le nouveau signal sera écouté dans la mainwindow mais celui ci sera émit par chaque action triggered individuellement donc les raccourcis clavier seront pris en compte.
+
+J'ai réussi à implémenter ça sans trop de problème et je vais l'ajouter au system documentation du project.
+
+Pour continuer la journée, j'ai travaillé sur la sub application Swappin Corrector. En effet, celle ci n'a pas de shortcut, par conséquent, j'ai décidé d'en ajouté. Une fonction récupérant l'événement "keyPressed" existe déjà donc j'ai juste à la modifier. Globalement, j'ai ajouté des raccourcis clavier pour chaque bouton et j'ai facilité la navigation entre les différents tab de l'application.
+
+J'ai réussi à implémenter ça sans trop de problème et je vais l'ajouter au system documentation du project.
