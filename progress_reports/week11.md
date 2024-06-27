@@ -47,3 +47,8 @@ Armand:
 Aujourd'hui, j'ai continué à travailler sur l'application. On a emplémenté beaucoup de fonctionnalités en plus et on commence à ne plus savoir quoi faire. Ainsi on va essayer d'organiser un meeting le plus vite possible pour voir ce qu'on peut faire pour la suite. En  attendant j'ai continué à ajouter des raccorucis clavier. J'ai voulu permettre à l'utilisateur de bouger l'environment 3D avec les flèches du clavier. J'ai donc ajouté un écouteur d'événement qui va écouter les flèches du clavier et qui va bouger l'environment 3D en conséquence. Cependant ça n'a pas marché, je pense que l'événement est déjà utilisé ailleur dans l'application il ne fait rien mais de tout de façon la rotation de l'environement 3D  de CameraManager et assez complexe et il est difficile et pas sécurisé de le diriger avec les flèches du clavier.
 
 J'ai ensuite remarqué que si on ouvre un fichier d'un projet et qu'on active ensuite le color mode, la page du fichier reste ouverte alors qu'on a désactivé. J'ai chnagé le code pour fermer le projet et toutes les fenêtres ouvertes quand on active le color mode.
+
+Armand:
+  Aujourd'hui j'ai continuer a rendre notre tab plus utilisable. Pour cela, j'ai gardé en interne un QVector de listes d'index de markeurs, afin qu'on puisse voir, quand on clique sur un bouton, les autres markeurs vers lesquels ce qu'on vient de cliquer est lié sont visuellement visible.
+De cette manière, toutes les listes sont link, et j'ai permit a l'utilisateur de maintenant deselectionner un markeur (pour le mettre en couleur) depuis notre tab.
+Pour cela on a simplement une liste de boolean où quand un markeur est selectionné il est mit en true, et sinon c'est en false.
