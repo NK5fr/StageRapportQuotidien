@@ -58,3 +58,6 @@ Pour cela on a simplement une liste de boolean où quand un markeur est selectio
 Aujourd'hui, j'ai travaillé sur l'application. J'ai ajouté une feature que je voulais implémenté depuis longtemps. En effet j'ai implémenté la possibilité de sauvegarder des photos depuis les caméras dans des dossiers choisis. J'ai simplement ajouté divers boutons et raccorucis clavier permettant de prendre une image à un instant t de depuis chaque camera ouverte et ensuite de laisser l'utilisateur les sauvegarder dans les dossier de son choix. Comme je veux que l'option soit active uniquement quand le live view est activé j'ai dû ajouter quelques conditions mais rien de bien compliqué.
 
 Une fois la feature implémentée j'ai édité le system documentation du projet pour ajouter un tutoriel de comment mettre en place cette nouvelle feature.
+
+Armand:
+  Tous marche maitneannt avec des fix de problèmes concernant les boutons "swap" et une refonte de la manière dont on gère les signaux pour selectionner visuellement des markeurs
