@@ -52,3 +52,9 @@ Armand:
   Aujourd'hui j'ai continuer a rendre notre tab plus utilisable. Pour cela, j'ai gardé en interne un QVector de listes d'index de markeurs, afin qu'on puisse voir, quand on clique sur un bouton, les autres markeurs vers lesquels ce qu'on vient de cliquer est lié sont visuellement visible.
 De cette manière, toutes les listes sont link, et j'ai permit a l'utilisateur de maintenant deselectionner un markeur (pour le mettre en couleur) depuis notre tab.
 Pour cela on a simplement une liste de boolean où quand un markeur est selectionné il est mit en true, et sinon c'est en false.
+
+## 28/06/2024
+
+Aujourd'hui, j'ai travaillé sur l'application. J'ai ajouté une feature que je voulais implémenté depuis longtemps. En effet j'ai implémenté la possibilité de sauvegarder des photos depuis les caméras dans des dossiers choisis. J'ai simplement ajouté divers boutons et raccorucis clavier permettant de prendre une image à un instant t de depuis chaque camera ouverte et ensuite de laisser l'utilisateur les sauvegarder dans les dossier de son choix. Comme je veux que l'option soit active uniquement quand le live view est activé j'ai dû ajouter quelques conditions mais rien de bien compliqué.
+
+Une fois la feature implémentée j'ai édité le system documentation du projet pour ajouter un tutoriel de comment mettre en place cette nouvelle feature.
