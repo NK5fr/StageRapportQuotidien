@@ -9,3 +9,7 @@ Comme d'habitude, j'ai ajouté un tuto de comment corriger cette erreur dans le 
 ## 02/07/2024
 
 Aujourd'hui j'ai continué à travailler sur l'application. J'ai fait un tour complet de toutes les fonctionnalités de l'application toujours à la recherche de crashs. J'ai tenté plusieurs combinaisons de features pour voir si certaines d'entre elles ne pouvait pas fonctionner en même temps mais au final j'ai rien trouvé et je n'ai pas trouvé de crash.
+
+## 03/07/2024
+
+Aujourd'hui j'ai continué à travailler sur l'application. Nous avons enfin fait un meeting avec la personne qui succède à notre supervision. On a présenté globalement l'application avec les changements qu'on a ajouté puis on a parlé de ce qu'il restait à faire. Il nous a été demandé de faire quelques changements esthétiques à l'application ainsi que d'ajouter des pages explicatives pour les widgets complexes. Ce n'est pas des tâches qui devraient prendre beaucoup de temps donc on ve certainement finir le stage en cherchant des crashs et en améliorant le rapport final qu'on envera le dernier jour à nos superviseurs. Pour finir la journée, j'ai cherché des crash de l'application et j'en ai trouvé un lié à la déconnection des caméras. Je n'ai cependant pas eu le temps de le résoudre donc je finirai demain.
