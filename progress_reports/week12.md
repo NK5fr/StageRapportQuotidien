@@ -13,3 +13,15 @@ Aujourd'hui j'ai continué à travailler sur l'application. J'ai fait un tour co
 ## 03/07/2024
 
 Aujourd'hui j'ai continué à travailler sur l'application. Nous avons enfin fait un meeting avec la personne qui succède à notre supervision. On a présenté globalement l'application avec les changements qu'on a ajouté puis on a parlé de ce qu'il restait à faire. Il nous a été demandé de faire quelques changements esthétiques à l'application ainsi que d'ajouter des pages explicatives pour les widgets complexes. Ce n'est pas des tâches qui devraient prendre beaucoup de temps donc on ve certainement finir le stage en cherchant des crashs et en améliorant le rapport final qu'on envera le dernier jour à nos superviseurs. Pour finir la journée, j'ai cherché des crash de l'application et j'en ai trouvé un lié à la déconnection des caméras. Je n'ai cependant pas eu le temps de le résoudre donc je finirai demain.
+
+## 04/07/2024
+
+Aujourd'hui, j'ai continué à travailler sur l'application. J'ai résolu le crash que j'avais trouvé hier. Il était encore une fois lié à des paramètres qui sont manipulés alors que la caméra est déconnectée. J'ai ajouté un try catch pour gérer le cas où la caméra est déconnectée. J'ai aussi ajouté un message d'erreur pour informer l'utilisateur de l'erreur. J'ai ensuite testé l'application pour vérifier que le crash ne se produisait plus et tout fonctionnait correctement. Pour continué, j'ai remarqué que le ligth theme qu'Armand avait ajouté hier ne marchait pas bien. Je lui ai donc indiqué pour qu'il corrige et après j'ai modifié un peu pour changer la couleur de fond du central widget.
+
+J'ai ajouté ces changements de ligth theme dans le system documentation de l'application.
+
+Comme d'habitude, j'ai continué à chercher des erreurs et autres crashs dans l'application; Après quelques recherches j'ai trouvé des erreurs dans le tableau qu'Armand a créé pour facilté la selection des marqueurs. Je lui ai montré mais je n'ai rien changé car il maitrise mieux cette partie que moi donc il est mieux placé pour corriger ces erreurs.
+
+J'ai ensuite remarqué que l'action quitter dans le MenuBar ne marchait pas et n'était pas implémentée dans le code. J'ai donc changé le code pour que cette action soit écoutée et que l'application se ferme correctement quand on clique dessus.
+
+J'ai ajouté ces changements dans le system documentation de l'application.
