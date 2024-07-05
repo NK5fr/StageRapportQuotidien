@@ -25,3 +25,9 @@ Comme d'habitude, j'ai continué à chercher des erreurs et autres crashs dans l
 J'ai ensuite remarqué que l'action quitter dans le MenuBar ne marchait pas et n'était pas implémentée dans le code. J'ai donc changé le code pour que cette action soit écoutée et que l'application se ferme correctement quand on clique dessus.
 
 J'ai ajouté ces changements dans le system documentation de l'application.
+
+## 05/07/2024
+
+Aujourd'hui, j'ai continué à travailler sur l'application. Je me suis attardé un peu sur le color mode. En effet lors de l'activation de celui ci, je désactive beaucoup de features de l'application pour éviter des problèmes du fait que les images sont en couleur plutôt qu'en noir et blanc. Cependant, je désactive beaucoup de ces features par précausion alors qu'elles ne posent pas vraiment de problème avec le color mode. Ainsi, j'ai décidé d'assouplir un peu les restrictions du color mode pour permettre à l'utilisateur de profiter de plus de features. J'ai donc modifié le code pour que certains menu du menu bar restent activée alors qu'avant ils étaient tous désactivés.
+
+Pour continué j'ai encore cherché des problèmes dans l'application et j'ai remarqué que la rotation de l'environnement 3D de SC allait à l'envers dans certaines situations. J'ai donc fait de longues recherches et analyses des valeurs pour comprendre d'où venait le problème. En C++, une valeur float se traduit automatiquement en int si besoin. Le problème venait de là car la position de la souris qui est devenu un float avec le devicePixelRatio étaient enregistrée comme un int ce qui faussait les valeurs. J'ai donc fait en sorte que toutes les valeurs soient float et j'ai expliqué les changements dans le system documentation de l'application.
