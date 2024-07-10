@@ -11,3 +11,9 @@ Je n'ai pas trouvé de bugs suplémentaire de ce côté là mais j'ai remarqué 
 Aujourd'hui, j'ai continué à travailler sur l'application. Hier, je n'ai pas pu finir les modifications que je voulais apporter à l'application. Ainsi, j'ai continué à trvailler sur ça aujourd'hui. Le crosshair n'était pas bien placé car il se positionnait par rapport à la taille de l'image affichée et même quand il se positionnait par rapport à la fenêtre, il ne prenait pas en compte la marge. J'ai changé le code pour prendre en compte cette différence. Maintenant il est bien placé dans la fenêtre.
 
 J'ai ensuite continué à chercher des bugs qu'on aurait oublié dans l'application mais après plusieurs essais je n'ai rien trouvé. Par conséquent, je me suis penché sur le bug que j'ai trouvé hier mais que je n'ai pas pu reproduire. J'ai de nouveau essayé de le provoquer et j'ai réussi au bout d'un moment. Cependant, je ne sais pas comment j'ai réussi et je ne suis pas parvenu à le reproduire par la suite. 
+
+## 10/07/2024 
+
+Aujourd'hui, j'ai continué à travailler sur l'application. Comme hier j'ai continué à chercher des bugs qu'on aurait oublié ou pas vu mais je n'ai rien trouvé d'interessant. J'ai ensuite remarqué que j'avais reçu un mail pour remplir un questionnaire obligatoire à propos de notre mobilité et d'erasmus +. J'ai donc rempli le questionnaire en entier, j'ai téléchargé le pdf final et je l'ai mis dans la partie "fin de mobilité" de moveon pour obtenir la fin des bourses.
+
+Ensuite, j'ai encore une fois cherché des bugs pour j'ai toujours rien trouvé. Ainsi, comme c'est notre dernier jour de stage, j'ai décidé de faire une relecture complète du "system_documentation" de l'application car on ve envoyer la dernière version de celui-ci ce soir avant de partir. J'ai donc corrigé certaines tournures de phrases qui me semblaient imprésises.
